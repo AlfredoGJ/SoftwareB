@@ -1,0 +1,10 @@
+C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\SoftwareB-master\league planner\bin\Debug\league planner.exe.config
+C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\SoftwareB-master\league planner\bin\Debug\leagueplanner.accdb
+C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\SoftwareB-master\league planner\bin\Debug\league planner.exe
+C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\SoftwareB-master\league planner\bin\Debug\league planner.pdb
+C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\SoftwareB-master\league planner\obj\Debug\league planner.csprojResolveAssemblyReference.cache
+C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\SoftwareB-master\league planner\obj\Debug\league_planner.Form1.resources
+C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\SoftwareB-master\league planner\obj\Debug\league_planner.Properties.Resources.resources
+C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\SoftwareB-master\league planner\obj\Debug\league planner.csproj.GenerateResource.Cache
+C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\SoftwareB-master\league planner\obj\Debug\league planner.exe
+C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\SoftwareB-master\league planner\obj\Debug\league planner.pdb
