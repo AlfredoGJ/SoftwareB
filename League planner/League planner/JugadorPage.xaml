@@ -1,0 +1,53 @@
+﻿<Page x:Class="League_planner.JugadorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:League_planner"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="JugadorPage">
+
+    <StackPanel Margin="40">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+           
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border BorderThickness="2" BorderBrush="AliceBlue">
+
+            <Image Grid.Column="0" Grid.Row="0"  Source="user.jpg" Visibility="Visible" />
+        </Border>
+
+
+        <!--<Label Content="Id" Grid.Row="1" />-->
+        <!--<TextBox Grid.Row="1" Grid.Column="1" Margin="3" IsEnabled="False"/>-->
+
+        <Label Content="Nombre" Grid.Row="2" />
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="3" x:Name="nombre" Text="{Binding Path= Nombre}" />
+
+        <Label Content="Apellido materno" Grid.Row="3"/>
+        <TextBox Grid.Row="3" Grid.Column="2"  Margin="3" x:Name="paterno" Text="{Binding Path=ApellidoMaterno}"/>
+
+        <Label Content="Apellido paterno" Grid.Row="4"/>
+            <TextBox Grid.Row="4" Grid.Column="2" Margin="3" x:Name="materno" Text="{Binding Path=ApellidoPaterno}"/>
+        
+
+    </Grid>
+
+        <Button   Height="30"   Foreground="White" Background="ForestGreen" Click="Aceptar" Margin="3" >Aceptar</Button>
+        <Button Height="30" Foreground="White" Background="Red" Click="Cancelar" Margin="3">Cancelar</Button>
+
+    </StackPanel>
+
+</Page>

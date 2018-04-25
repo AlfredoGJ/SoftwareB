@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "League planner", "League planner\League planner.csproj", "{80741CB9-6554-4AC6-95CD-38C31C73FFCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80741CB9-6554-4AC6-95CD-38C31C73FFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80741CB9-6554-4AC6-95CD-38C31C73FFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80741CB9-6554-4AC6-95CD-38C31C73FFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80741CB9-6554-4AC6-95CD-38C31C73FFCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBC2E43B-2F24-48D7-A888-E584257F314E}
+	EndGlobalSection
+EndGlobal
