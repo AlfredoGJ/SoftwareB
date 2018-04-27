@@ -8,3 +8,6 @@ C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería d
 C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\Principal\League Planner\obj\Debug\League Planner.exe
 C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\Principal\League Planner\obj\Debug\League Planner.pdb
 C:\Users\Andrey Hernández\Documents\1. Ingenieria en Informática\Ingeniería de Software B\Principal\League Planner\obj\Debug\League Planner.csprojResolveAssemblyReference.cache
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\Principal\League Planner\bin\Debug\League Planner.exe.config
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\Principal\League Planner\obj\Debug\League Planner.exe
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\Principal\League Planner\obj\Debug\League Planner.pdb

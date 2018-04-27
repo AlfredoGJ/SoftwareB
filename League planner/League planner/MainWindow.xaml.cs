@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -14,6 +13,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SQLite;
 using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
+
 
 namespace League_planner
 {
@@ -25,16 +27,30 @@ namespace League_planner
         SQLiteConnection connection;
         JugadorDBController jugadorController;
 
+
         public MainWindow()
         {
+           // InitializeComponent();
+            Principal principal = new Principal();
+            principal.Show();
+            this.Hide();
+           // this.Close();
+            //App.StablishConnection();
+            //this.Content = new JugadoresCatalogo();
+        }
+        public MainWindow(Boolean b)
+        {
+            if(b == true) { 
             InitializeComponent();
             App.StablishConnection();
             this.Content = new JugadoresCatalogo();
+              
+            }
         }
 
 
-        
-      
-        
+
+
+
     }
 }

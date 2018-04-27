@@ -12,7 +12,7 @@ namespace League_planner
         public string Nombre { get; set; }
         public string ApellidoPaterno { get; set; }
         public string ApellidoMaterno { get; set; }
-        public string NombreCompleto { get => Nombre + " " + ApellidoPaterno + " " + ApellidoMaterno; } 
+        public string NombreCompleto; /*{ get => Nombre + " " + ApellidoPaterno + " " + ApellidoMaterno;*/// } 
 
         public Jugador(long id, string nombre,string apellidoPaterno,string apellidoMaterno)
         {
