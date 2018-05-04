@@ -60,5 +60,9 @@ namespace League_planner
         {
             Window.GetWindow(this).Content = new ArbitrosCatalogo(this);
         }
+        private void EquiposMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Window.GetWindow(this).Content = new EquiposCatalogo(this);
+        }
     }
 }

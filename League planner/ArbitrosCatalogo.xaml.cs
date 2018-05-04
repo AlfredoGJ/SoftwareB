@@ -52,7 +52,7 @@ namespace League_planner
         {
             if (listaArbitros.SelectedItem != null)
             {
-                Jugador jugador = (listaArbitros.SelectedItem as Jugador);
+                Arbitro jugador = (listaArbitros.SelectedItem as Arbitro);
                 id.Content = jugador.id.ToString();
                 nombre.Content = jugador.Nombre;
                 paterno.Content = jugador.ApellidoPaterno;

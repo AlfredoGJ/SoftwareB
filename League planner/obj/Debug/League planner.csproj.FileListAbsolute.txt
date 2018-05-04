@@ -118,3 +118,7 @@ C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\Leagu
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.csproj.GenerateResource.Cache
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.exe
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.pdb
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoPage.g.cs
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquiposCatalogo.g.cs
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoPage.baml
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquiposCatalogo.baml

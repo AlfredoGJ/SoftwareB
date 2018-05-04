@@ -42,7 +42,7 @@
                     <Label FontSize="50">Arbitros</Label>
                 </StackPanel>
 
-                <StackPanel x:Name="equipo" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Background="DarkViolet" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave">
+                <StackPanel x:Name="equipo" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Background="DarkViolet" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" MouseLeftButtonUp="EquiposMouseLeftButtonUp">
                     <Label FontSize="50">Equipos</Label>
                 </StackPanel>
 

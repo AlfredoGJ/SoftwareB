@@ -18,6 +18,7 @@ namespace League_planner
     {
         static JugadorDBController jugadorcontroller;
         static ArbitroDBController arbitrocontroller;
+        static EquipoDBController equipocontroller;
         static SQLiteConnection connection;
 
 
@@ -99,6 +100,21 @@ namespace League_planner
                 else
                 {
                     return arbitrocontroller;
+                }
+            }
+        }
+        public static EquipoDBController EquipoController
+        {
+            get
+            {
+                if (equipocontroller == null)
+                {
+                    equipocontroller = new EquipoDBController(connection);
+                    return equipocontroller;
+                }
+                else
+                {
+                    return equipocontroller;
                 }
             }
         }
