@@ -76,6 +76,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ArbitroPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ArbitrosCatalogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="JugadoresCatalogo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -98,6 +106,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Arbitro.cs" />
+    <Compile Include="ArbitroDBController.cs" />
+    <Compile Include="ArbitroPage.xaml.cs">
+      <DependentUpon>ArbitroPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ArbitrosCatalogo.xaml.cs">
+      <DependentUpon>ArbitrosCatalogo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Jugador.cs" />
     <Compile Include="JugadorDBController.cs" />

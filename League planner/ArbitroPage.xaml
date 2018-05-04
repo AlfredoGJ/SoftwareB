@@ -1,0 +1,90 @@
+﻿<Page x:Class="League_planner.ArbitroPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:League_planner"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="ArbitroPage">
+
+    <DockPanel >
+
+        <DockPanel x:Name="Toolbar" Height="40" DockPanel.Dock="Top" >
+            <Button Width="40" Background="Red" Foreground="White" FontSize="18" DockPanel.Dock="Right"  >
+                X
+            </Button>
+            <Button Width="40" Foreground="White" DockPanel.Dock="Right" FontSize="18">
+                _
+            </Button>
+            <Button Width="40" DockPanel.Dock="Left">
+                -
+            </Button>
+            <Button Width="40" DockPanel.Dock="Left">
+                B
+            </Button>
+            <StackPanel Background="LightGray" MouseDown="StackPanel_MouseDown" >
+                <Label FontSize="18"  HorizontalAlignment="Center">League Planner</Label>
+            </StackPanel>
+        </DockPanel>
+        <DockPanel  Margin="50">
+
+            <Grid  DockPanel.Dock="Top" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Border BorderThickness="2" BorderBrush="AliceBlue">
+
+                    <Image Grid.Column="0" Grid.Row="0"  Source="user.jpg" Visibility="Visible" />
+                </Border>
+
+
+                <!--<Label Content="Id" Grid.Row="1" />-->
+                <!--<TextBox Grid.Row="1" Grid.Column="1" Margin="3" IsEnabled="False"/>-->
+
+                <Label Content="Nombre" Grid.Row="2" FontSize="20"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Margin="3" FontSize="18" x:Name="nombre" Width="300" HorizontalAlignment="Left" Text="{Binding Path= Nombre}" />
+
+                <Label Content="Apellido materno" Grid.Row="3" FontSize="20"/>
+                <TextBox Grid.Row="3" Grid.Column="2"  Margin="3" x:Name="paterno" FontSize="18"  HorizontalAlignment="Left" Width="300" Text="{Binding Path=ApellidoMaterno}"/>
+
+                <Label Content="Apellido paterno" Grid.Row="4" FontSize="20"/>
+                <TextBox Grid.Row="4" Grid.Column="2" Margin="3" x:Name="materno" FontSize="18" HorizontalAlignment="Left" Width="300" Text="{Binding Path=ApellidoPaterno}"/>
+
+                <Label Content="Fecha de nacimiento" Grid.Row="5" FontSize="20"/>
+                <DatePicker Grid.Row="5" Grid.Column="2" Margin="3" x:Name="nacimiento" FontSize="18" HorizontalAlignment="Left" Width="300" Text="{Binding Path=FechaDeNacimiento}"/>
+
+                <Label Content="Telefono" Grid.Row="6" FontSize="20"/>
+                <TextBox  Grid.Row="6" Grid.Column="2" Margin="3" x:Name="telefono" FontSize="18" HorizontalAlignment="Left" Width="300" Text="{Binding Path=Telefono}"/>
+
+              
+            </Grid>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" Height="73" >
+                <Button   Foreground="White" Background="ForestGreen" Click="Aceptar" Margin="3" Width="200">Aceptar</Button>
+                <Button  Foreground="White" Background="Red" Click="Cancelar" Margin="3" Width="200">Cancelar</Button>
+            </StackPanel>
+
+
+        </DockPanel>
+
+
+
+    </DockPanel>
+
+</Page>

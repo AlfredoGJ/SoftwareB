@@ -38,7 +38,7 @@
                     
                 </StackPanel>
 
-                <StackPanel x:Name="arbitros" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Background="BurlyWood" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave">
+                <StackPanel x:Name="arbitros" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Background="BurlyWood" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" MouseLeftButtonUp="AribtrosMouseLeftButtonUp">
                     <Label FontSize="50">Arbitros</Label>
                 </StackPanel>
 

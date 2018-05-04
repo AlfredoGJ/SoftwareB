@@ -17,7 +17,7 @@ namespace League_planner
         public string Email { get; set; }
         public int Equipo { get; set; }
         public bool Eliminado { get; set; }
-        public string NombreCompleto { get => Nombre + " " + ApellidoPaterno + " " + ApellidoMaterno; } 
+        public string NombreCompleto;// { get => Nombre + " " + ApellidoPaterno + " " + ApellidoMaterno; } 
 
         public Jugador(long id, string nombre,string apellidoPaterno,string apellidoMaterno,DateTime nacimiento,string tel,string mail, bool eliminado, int equipo)
         {

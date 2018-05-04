@@ -55,5 +55,10 @@ namespace League_planner
             if (e.RightButton == MouseButtonState.Released)
                 Window.GetWindow(this).DragMove();
         }
+
+        private void AribtrosMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Window.GetWindow(this).Content = new ArbitrosCatalogo(this);
+        }
     }
 }

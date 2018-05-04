@@ -24,6 +24,7 @@ namespace League_planner
     {
         SQLiteConnection connection;
         JugadorDBController jugadorController;
+        ArbitroDBController arbitroController;
 
         public MainWindow()
         {

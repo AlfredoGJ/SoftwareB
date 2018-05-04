@@ -17,6 +17,7 @@ namespace League_planner
     public partial class App : Application
     {
         static JugadorDBController jugadorcontroller;
+        static ArbitroDBController arbitrocontroller;
         static SQLiteConnection connection;
 
 
@@ -49,7 +50,7 @@ namespace League_planner
 
             // Creacion de tabla arbitros
             command.CommandText = "CREATE TABLE arbitros(id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                " nombre varchar(50), apellidop varchar(50), apellidom varchar(50));";
+                " nombre varchar(50), apellidop varchar(50), apellidom varchar(50), nacimiento DATE, telefono varchar(10));";
             command.ExecuteNonQuery();
 
             // Creacion de tabla equipos
@@ -85,6 +86,21 @@ namespace League_planner
                 }
             }
             
+        }
+        public static ArbitroDBController ArbitroController
+        {
+            get
+            {
+                if(arbitrocontroller == null)
+                {
+                    arbitrocontroller = new ArbitroDBController(connection);
+                    return arbitrocontroller;
+                }
+                else
+                {
+                    return arbitrocontroller;
+                }
+            }
         }
         
           
