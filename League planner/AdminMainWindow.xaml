@@ -39,8 +39,7 @@
 
 
                     </StackPanel.Background>
-
-                    <Label FontSize="60" Foreground="#fff">Jugadores</Label>
+                    <Label FontSize="60" Foreground="#fff" Content="Jugadores"/>
 
 
                 </StackPanel>
