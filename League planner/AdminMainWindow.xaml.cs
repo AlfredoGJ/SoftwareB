@@ -42,7 +42,7 @@ namespace League_planner
         private void PanelMouseLeave(object sender, MouseEventArgs e)
         {
             StackPanel panel = (sender as StackPanel);
-            panel.Margin = new Thickness(0);
+            panel.Margin = new Thickness(10);
         }
 
         private void JugadoresMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
