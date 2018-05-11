@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/delete.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/icons8-change-user-64.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/icons8-exit-96.png")]
 
 

@@ -64,5 +64,18 @@ namespace League_planner
         {
             Window.GetWindow(this).Content = new EquiposCatalogo(this);
         }
+
+        private void Salir(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Close();
+        }
+
+        private void CambiarUsuario(object sender, RoutedEventArgs e)
+        {
+            Window login = new LoginWindow();
+            login.Show();
+            Window.GetWindow(this).Close();
+
+        }
     }
 }

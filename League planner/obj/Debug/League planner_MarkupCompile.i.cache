@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\
 League_planner
 none
 false
 DEBUG;TRACE
-C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\App.xaml
-10-1845022360
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\App.xaml
+91136083413
 
-241082437938
-19-1263132189
-AdminMainWindow.xaml;ArbitroPage.xaml;ArbitrosCatalogo.xaml;EquipoPage.xaml;EquiposCatalogo.xaml;JugadoresCatalogo.xaml;JugadorPage.xaml;Login.xaml;MainWindow.xaml;MyButton.xaml;
+232065462889
+192113232665
+AdminMainWindow.xaml;ArbitroPage.xaml;ArbitrosCatalogo.xaml;EquipoPage.xaml;EquiposCatalogo.xaml;JugadoresCatalogo.xaml;JugadorPage.xaml;LoginWindow.xaml;MainWindow.xaml;
 
-False
+True
 

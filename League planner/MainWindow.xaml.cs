@@ -30,7 +30,7 @@ namespace League_planner
         {
             InitializeComponent();
             App.StablishConnection();
-            this.Content = new Login();
+            this.Content = new AdminMainWindow();
         }
 
 
