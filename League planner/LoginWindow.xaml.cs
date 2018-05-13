@@ -28,14 +28,22 @@ namespace League_planner
         {
             if (usuario.Text == "admin" && contraseña.Password == "root")
             {
-                Window w = new MainWindow();
+                Window w = new MainWindow(usuario.Text);
                 w.Show();
                 this.Close();
                
             }
-               
-            
-                
+
+            if (usuario.Text == "coach" && contraseña.Password == "1234")
+            {
+                Window w = new MainWindow(usuario.Text);
+                w.Show();
+                this.Close();
+
+            }
+
+
+
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)

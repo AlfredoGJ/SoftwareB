@@ -1,0 +1,46 @@
+﻿<Page x:Class="League_planner.EquipoEstadisticasPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:League_planner"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EquipoEstadisticasPage">
+
+
+    <DockPanel  >
+
+        <StackPanel Height="100" Orientation="Horizontal" DockPanel.Dock="Top">
+            <Image x:Name="logo" Width="100" Height="100"/>
+            <Label Content="Nombre del equipo" FontSize="50"/>
+
+        </StackPanel>
+    
+    <Grid  Margin="40,0,40,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+                <RowDefinition />
+
+            </Grid.RowDefinitions>
+
+            <StackPanel  Background="White" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                <Label Content="Estadisticas" FontSize="40"/>
+
+            </StackPanel>
+        
+    </Grid>
+
+    </DockPanel>
+</Page>

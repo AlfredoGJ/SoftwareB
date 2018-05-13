@@ -122,3 +122,45 @@ C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\Leagu
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.exe
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.pdb
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.csprojResolveAssemblyReference.cache
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\AdminMainWindow.g.cs
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\ArbitroPage.g.cs
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\ArbitrosCatalogo.g.cs
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\EntrenadorMainWindow.g.cs
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\EquipoPage.g.cs
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\EquiposCatalogo.g.cs
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\JugadoresCatalogo.g.cs
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\JugadorPage.g.cs
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\LoginWindow.g.cs
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\MainWindow.g.cs
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\App.g.cs
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\League planner_MarkupCompile.cache
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\League planner_MarkupCompile.lref
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\League planner.exe.config
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\League planner.exe
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\League planner.pdb
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\EntityFramework.dll
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\System.Data.SQLite.dll
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\EntityFramework.xml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\System.Data.SQLite.xml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\AdminMainWindow.baml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\ArbitroPage.baml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\ArbitrosCatalogo.baml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\EntrenadorMainWindow.baml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\EquipoPage.baml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\EquiposCatalogo.baml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\JugadoresCatalogo.baml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\JugadorPage.baml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\LoginWindow.baml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\MainWindow.baml
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\League planner.g.resources
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\League_planner.Properties.Resources.resources
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\League planner.csproj.GenerateResource.cache
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\League planner.csproj.CoreCompileInputs.cache
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\League planner.csproj.CopyComplete
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\League planner.exe
+C:\Users\josal\Documents\OCTAVO SEMESTRE\Ingenieria de software B\SoftwareB\League planner\obj\Debug\League planner.pdb

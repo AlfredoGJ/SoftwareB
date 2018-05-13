@@ -84,6 +84,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EntrenadorMainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EquipoEstadisticasPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EquipoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -123,8 +131,14 @@
     <Compile Include="ArbitrosCatalogo.xaml.cs">
       <DependentUpon>ArbitrosCatalogo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EntrenadorMainWindow.xaml.cs">
+      <DependentUpon>EntrenadorMainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Equipo.cs" />
     <Compile Include="EquipoDBController.cs" />
+    <Compile Include="EquipoEstadisticasPage.xaml.cs">
+      <DependentUpon>EquipoEstadisticasPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EquipoPage.xaml.cs">
       <DependentUpon>EquipoPage.xaml</DependentUpon>
     </Compile>
@@ -242,6 +256,12 @@
   <ItemGroup>
     <Resource Include="images\icons8-change-user-64.png" />
     <Resource Include="images\icons8-exit-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\line.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\line-bw.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.108.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net46\System.Data.SQLite.Core.targets')" />

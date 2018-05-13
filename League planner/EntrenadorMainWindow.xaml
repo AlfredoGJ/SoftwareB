@@ -1,0 +1,105 @@
+﻿<Page x:Class="League_planner.EntrenadorMainWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:League_planner"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="EntrenadorMainWindow">
+
+    <Page.Background>
+        <ImageBrush ImageSource="images/ball-football-game-39562.jpg"/>
+    </Page.Background>
+
+    <Grid >
+        <StackPanel  >
+            <StackPanel Background="AliceBlue" MouseDown="StackPanel_MouseDown" Height="140" Opacity=".7" Margin="20,20,20,0" Orientation="Horizontal"  >
+                <Image Width="200" Height="150" Margin="10,-10,20,0" Source="images/lp.png" Stretch="Uniform"></Image>
+                <Label FontSize="60" Margin="10,0,0,0">League Planner</Label>
+            </StackPanel>
+            <Grid Background="AliceBlue" Height="500"  Margin="20,0,20,20" Opacity=".95">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+                <StackPanel x:Name="jugadores" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="2" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" MouseLeftButtonUp="JugadoresMouseLeftButtonUp" Margin="5">
+                    <StackPanel.Background >
+                        <ImageBrush ImageSource="images/equipos.jpg" Stretch="UniformToFill"/>
+
+
+
+                    </StackPanel.Background>
+                    <Label FontSize="60" Foreground="#fff" Content="Mi equipo"/>
+
+
+                </StackPanel>
+
+              
+
+                <StackPanel x:Name="equipo" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"  MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" MouseLeftButtonUp="EquiposMouseLeftButtonUp" Margin="5">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="images/line-bw.jpeg" Stretch="UniformToFill"/>
+                    </StackPanel.Background>
+
+                    <Label FontSize="60" Foreground="#fff" >Alineación</Label>
+                </StackPanel>
+
+                <StackPanel x:Name="Calendario" Grid.Column="2"  MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10" Grid.RowSpan="3">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="images/calendar.jpg" Stretch="UniformToFill"/>
+
+                    </StackPanel.Background>
+
+                    <Label FontSize="60" Foreground="#fff" >Calendario</Label>
+                </StackPanel>
+
+                <StackPanel x:Name="tabla" Grid.Column="3" Grid.RowSpan="3" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10">
+
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="images/butaca.png" Stretch="UniformToFill"/>
+
+                    </StackPanel.Background>
+
+
+                    <Label FontSize="60" Foreground="#fff" >Tabla</Label>
+                    <Image Source="images/ranking.png" Width="200" Margin="0,60,0,0"/>
+
+                </StackPanel>
+
+              
+
+
+
+            </Grid>
+
+            <StackPanel  Height="40"  Orientation="Horizontal" Margin="20,-10,20,10">
+
+                <Button Width=" 50" Margin="0,5,5,5" ToolTip="Salir" Click="Salir">
+                    <Button.Content>
+                        <Image Source="images/icons8-exit-96.png"/>
+
+                    </Button.Content>
+                </Button>
+
+                <Button Width="50" Margin="5" ToolTip="Cambiar de usuario" Click="CambiarUsuario">
+                    <Button.Content>
+                        <Image Source="images/icons8-change-user-64.png"/>
+
+                    </Button.Content>
+
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

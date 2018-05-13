@@ -26,11 +26,16 @@ namespace League_planner
         JugadorDBController jugadorController;
         ArbitroDBController arbitroController;
 
-        public MainWindow()
+        public MainWindow(string user)
         {
             InitializeComponent();
             App.StablishConnection();
-            this.Content = new AdminMainWindow();
+
+            if (user == "admin")
+                this.Content = new AdminMainWindow();
+
+            if (user == "coach")
+                this.Content = new EntrenadorMainWindow();
         }
 
 
