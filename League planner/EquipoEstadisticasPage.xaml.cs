@@ -20,9 +20,32 @@ namespace League_planner
     /// </summary>
     public partial class EquipoEstadisticasPage : Page
     {
-        public EquipoEstadisticasPage()
+        private Page previous;
+        public EquipoEstadisticasPage(Page prevPage)
         {
+            previous = prevPage;
             InitializeComponent();
+        }
+
+        private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.RightButton == MouseButtonState.Released)
+                Window.GetWindow(this).DragMove();
+        }
+
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Content = previous;
+        }
+
+        private void Cerrar(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).Close();
+        }
+
+        private void Minimizar(object sender, RoutedEventArgs e)
+        {
+            Window.GetWindow(this).WindowState= WindowState.Minimized;
         }
     }
 }

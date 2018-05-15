@@ -5,42 +5,137 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:League_planner"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="720" d:DesignWidth="1280"
       Title="EquipoEstadisticasPage">
 
 
-    <DockPanel  >
+    <DockPanel>
 
-        <StackPanel Height="100" Orientation="Horizontal" DockPanel.Dock="Top">
-            <Image x:Name="logo" Width="100" Height="100"/>
-            <Label Content="Nombre del equipo" FontSize="50"/>
+
+        <DockPanel x:Name="Toolbar" Height="40" DockPanel.Dock="Top">
+            <Button Width="40" DockPanel.Dock="Right"  Click="Cerrar" BorderBrush="red">
+                <Button.Content>
+                    <Image Source="close-icon.ico" Width="40" Height="40"/>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Background="Black" Foreground="White" DockPanel.Dock="Right" FontSize="18" Click="Minimizar">
+                __
+            </Button>
+            <Grid >
+                <Button Click="Back" Width="40">
+                    <Button.Content>
+                        <Image Source="left.ico"/>
+                    </Button.Content>
+
+                </Button>
+
+            </Grid>
+
+            <Button Width="40" DockPanel.Dock="Left">
+                <Button.Content>
+                    <Image Source="burguer.ico"/>
+                </Button.Content>
+
+            </Button>
+            <StackPanel Background="LightGray" MouseDown="StackPanel_MouseDown" >
+                <Label FontSize="18"  HorizontalAlignment="Center">League Planner</Label>
+            </StackPanel>
+        </DockPanel>
+
+
+        <DockPanel  Background="Azure">
+
+        <DockPanel Height="160" DockPanel.Dock="Top">
+            <Image x:Name="logo" Width="160" Height="160" DockPanel.Dock="Left"/>
+            <StackPanel>
+
+                <Label Content="Nombre del equipo" FontSize="50"/>
+                <StackPanel Orientation="Horizontal" >
+                    <Label Content="Posicion" FontSize="30"/>
+                    <Label x:Name="posicion" Margin="0,0,50,0" FontSize="25" VerticalAlignment="Bottom" Content="10"/>
+                    <Label Content="Puntos" FontSize="30"/>
+                    <Label x:Name="puntos" FontSize="25" VerticalAlignment="Bottom" Content="10"/>
+                </StackPanel>
+            </StackPanel>
+            
+
+        </DockPanel>
+    
+    <StackPanel Orientation="Horizontal" Margin="20" >
+            
+        <Grid DockPanel.Dock="Left" Width="400">
+                
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Partidos" FontSize="30"/>
+                
+                <Label Content="Jugados:" Grid.Row="1" FontSize="20"/>
+                <Label Content="Ganados:" Grid.Row="2" FontSize="20"/>
+                <Label Content="Perdidos:" Grid.Row="3" FontSize="20"/>
+                <Label Content="Empatados:" Grid.Row="4" FontSize="20"/>
+
+                
+                <Label Content="Jugados:" FontSize="20" x:Name="pjugados" Grid.Row="1" Grid.Column="1"/>
+                <Label Content="Ganados:" FontSize="20"  x:Name ="pganados"  Grid.Row="2" Grid.Column="1"/>
+                <Label Content="Perdidos:" FontSize="20" x:Name ="pperdidos"  Grid.Row ="3" Grid.Column="1"/>
+                <Label Content="Empatados:" FontSize="20" x:Name="pempatados" Grid.Row="4" Grid.Column="1"/>
+
+            </Grid>
+
+            <Grid   Width="400">
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Goles" FontSize="30"/>
+                
+                <Label Content="A favor:" Grid.Row="1" FontSize="20"/>
+                <Label Content="En contra:" Grid.Row="2" FontSize="20"/>
+                <Label Content="Diferencia:" Grid.Row="3" FontSize="20"/>
+                
+
+               
+                <Label Content="favor:" FontSize="20" x:Name="favor" Grid.Row="1" Grid.Column="1"/>
+                <Label Content="contra:" FontSize="20" x:Name="contra"  Grid.Row="2" Grid.Column="1"/>
+                <Label Content="diferencia:" FontSize="20" x:Name="diferencia"   Grid.Row ="3" Grid.Column="1"/>
+                
+
+            </Grid>
+
+
+
+
 
         </StackPanel>
-    
-    <Grid  Margin="40,0,40,10">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            
-        </Grid.ColumnDefinitions>
 
-
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-                <RowDefinition />
-
-            </Grid.RowDefinitions>
-
-            <StackPanel  Background="White" Grid.ColumnSpan="2" Grid.RowSpan="2">
-                <Label Content="Estadisticas" FontSize="40"/>
-
-            </StackPanel>
-        
-    </Grid>
+    </DockPanel>
 
     </DockPanel>
 </Page>

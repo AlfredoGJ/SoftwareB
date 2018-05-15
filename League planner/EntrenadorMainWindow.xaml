@@ -64,7 +64,7 @@
                     <Label FontSize="60" Foreground="#fff" >Calendario</Label>
                 </StackPanel>
 
-                <StackPanel x:Name="tabla" Grid.Column="3" Grid.RowSpan="3" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10">
+                <StackPanel x:Name="tabla" Grid.Column="3" Grid.RowSpan="3" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10" MouseUp="tabla_MouseUp">
 
                     <StackPanel.Background>
                         <ImageBrush ImageSource="images/butaca.png" Stretch="UniformToFill"/>

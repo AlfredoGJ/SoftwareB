@@ -1,0 +1,61 @@
+﻿<Page x:Class="League_planner.TablaPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:League_planner"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="TablaPage">
+
+    <DockPanel>
+        <DockPanel x:Name="Toolbar" Height="40" DockPanel.Dock="Top">
+            <Button Width="40" DockPanel.Dock="Right"  Click="Cerrar" BorderBrush="red">
+                <Button.Content>
+                    <Image Source="close-icon.ico" Width="40" Height="40"/>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Background="Black" Foreground="White" DockPanel.Dock="Right" FontSize="18" Click="Minimizar">
+                __
+            </Button>
+            <Grid >
+                <Button Click="Back" Width="40">
+                    <Button.Content>
+                        <Image Source="left.ico"/>
+                    </Button.Content>
+
+                </Button>
+
+            </Grid>
+
+            <Button Width="40" DockPanel.Dock="Left">
+                <Button.Content>
+                    <Image Source="burguer.ico"/>
+                </Button.Content>
+
+            </Button>
+            <StackPanel Background="LightGray" MouseDown="StackPanel_MouseDown" >
+                <Label FontSize="18"  HorizontalAlignment="Center">League Planner</Label>
+            </StackPanel>
+        </DockPanel>
+
+
+        <ListView x:Name="tabla" Margin="50">
+
+            
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Background="Azure" >
+                        <Image  Width="80" Height="80"  />
+                        <TextBlock Text="{Binding Nombre}" FontSize="20" Width="300" VerticalAlignment="Center"/>
+                        <TextBlock Text="{Binding Puntos}" FontSize="20" Width="50" VerticalAlignment="Center"/>
+                        <TextBlock Text="{Binding Diferencia}" FontSize="20" Width="50" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+        
+    </DockPanel>
+</Page>

@@ -46,7 +46,7 @@ namespace League_planner
 
         private void JugadoresMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            Window.GetWindow(this).Content = new JugadoresCatalogo(this);
+            Window.GetWindow(this).Content = new EquipoEstadisticasPage(this);
         }
 
         private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
@@ -77,5 +77,9 @@ namespace League_planner
 
         }
 
+        private void tabla_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            Window.GetWindow(this).Content = new TablaPage(this);
+        }
     }
 }
