@@ -96,29 +96,32 @@ C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\Leagu
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\AdminMainWindow.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\ArbitroPage.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\ArbitrosCatalogo.g.cs
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EntrenadorMainWindow.g.cs
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoEstadisticasPage.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoPage.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquiposCatalogo.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\JugadoresCatalogo.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\JugadorPage.g.cs
-C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\Login.g.cs
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\LoginWindow.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\MainWindow.g.cs
-C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\MyButton.g.cs
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\TablaPage.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\App.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner_MarkupCompile.cache
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner_MarkupCompile.lref
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\AdminMainWindow.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\ArbitroPage.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\ArbitrosCatalogo.baml
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EntrenadorMainWindow.baml
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoEstadisticasPage.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoPage.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquiposCatalogo.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\JugadoresCatalogo.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\JugadorPage.baml
-C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\Login.baml
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\LoginWindow.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\MainWindow.baml
-C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\MyButton.baml
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\TablaPage.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.g.resources
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League_planner.Properties.Resources.resources
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.csproj.GenerateResource.Cache
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.exe
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.pdb
-C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.csprojResolveAssemblyReference.cache
