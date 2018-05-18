@@ -69,5 +69,10 @@ namespace League_planner
         {
 
         }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            listaEventos.ItemsSource = App.CalendarioController.GetAll();
+        }
     }
 }

@@ -28,10 +28,11 @@ namespace League_planner
         public CalendarioPage(Calendario c, Page previous)
         {
 
-            InitializeComponent();
+            
             this.calendario = c;
             this.previousPage = previous;
-            DataContext = calendario;  
+            DataContext = calendario;
+            InitializeComponent();
         }
 
         private void Back(object sender, RoutedEventArgs e)
@@ -61,9 +62,17 @@ namespace League_planner
 
         private void button_Click_2(object sender, RoutedEventArgs e)
         {
-            App.CalendarioController.Save(calendario);
-            MessageBox.Show(calendario.id + calendario.dia + calendario.mes + calendario.local + calendario.visitante);
-            Window.GetWindow(this).Content = previousPage;
+            if(dia.Text != null && mes.Text != null && local.Text != null && visitante.Text != null)
+            {
+                calendario.dia = Convert.ToInt32( dia.Text);
+                calendario.mes = mes.Text;
+                calendario.local = local.Text;
+                calendario.visitante = visitante.Text;
+                App.CalendarioController.Save(calendario);
+                MessageBox.Show("id: " + calendario.id + "\ndia: " + calendario.dia + "\nmes: " + calendario.mes + "\nlocal: " + calendario.local + "\nVisitante: " + calendario.visitante);
+                Window.GetWindow(this).Content = previousPage;
+            }
+            
         }
     }
 }
