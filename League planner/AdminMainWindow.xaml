@@ -16,6 +16,7 @@
             <StackPanel Background="AliceBlue" MouseDown="StackPanel_MouseDown" Height="100" Opacity=".7" Margin="20" Orientation="Horizontal"  >
                 <Image Width="200" Height="150" Margin="-10,-10,20,0" Source="images/lp.png" Stretch="Uniform"></Image>
                 <Label FontSize="60" Margin="10,0,0,0">League Planner</Label>
+                <DockPanel LastChildFill="False" Width="100"/>
             </StackPanel>
             <Grid Background="AliceBlue" Height="500"  Margin="20" Opacity=".95">
                 <Grid.ColumnDefinitions>
@@ -60,7 +61,8 @@
                     <Label FontSize="60" Foreground="#fff" >Equipos</Label>
                 </StackPanel>
 
-                <StackPanel x:Name="Calendario" Grid.Column="2" Grid.Row="1" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10" Grid.RowSpan="2">
+                <StackPanel x:Name="Calendario" MouseLeftButtonUp="Calendario_MouseLeftButtonUp"
+                            Grid.Column="2" Grid.Row="1" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10" Grid.RowSpan="2">
                     <StackPanel.Background>
                         <ImageBrush ImageSource="images/calendar.jpg" Stretch="UniformToFill"/>
 

@@ -69,6 +69,7 @@ namespace League_planner
 
                 
                 App.JugadorController.Save(jugador);
+                MessageBox.Show(jugador.Nombre);
                 Window.GetWindow(this).Content = previousPage;
 
             }

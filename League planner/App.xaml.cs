@@ -19,6 +19,7 @@ namespace League_planner
         static JugadorDBController jugadorcontroller;
         static ArbitroDBController arbitrocontroller;
         static EquipoDBController equipocontroller;
+        static CalendarioDBController calendariocontroller;
         static SQLiteConnection connection;
 
 
@@ -47,8 +48,6 @@ namespace League_planner
             command.CommandText = "CREATE TABLE jugadores(id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 " nombre varchar(50), apellidop varchar(50), apellidom varchar(50), nacimiento DATE, telefono varchar(10), email varchar(100), clave_equipo int, eliminado int);";
             command.ExecuteNonQuery();
-
-
             // Creacion de tabla arbitros
             command.CommandText = "CREATE TABLE arbitros(id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 " nombre varchar(50), apellidop varchar(50), apellidom varchar(50), nacimiento DATE, telefono varchar(10), email varchar(100), eliminado int);";
@@ -85,9 +84,14 @@ namespace League_planner
             command.CommandText = "CREATE TABLE usuarios(id INTEGER PRIMARY KEY AUTOINCREMENT," + "tipo varchar(30), contrasena varchar(20), eliminado int);";
             command.ExecuteNonQuery();
 
+            //Creacion de tabla calendario
+            command.CommandText = "CREATE TABLE calendarios(id INTEGER PRIMARY KEY AUTOINCREMENT," + 
+                                 " dia int, mes varchar(30), local varchar(30), visitante varchar(30));";
+            command.ExecuteNonQuery();
+
             //command.CommandText = "INSERT INTO jugadores(nombre, apellidop, apellidom) VALUES('Juan', 'Perez', 'Lopez'); ";
             //command.ExecuteNonQuery();
-            //command.CommandText = "INSERT INTO jugadores(nombre, apellidop, apellidom) VALUES('Esteban', 'Lujan', 'Moreno'); ";
+            //command.CommandText = "INSERT INTO calendarios(dia, mes, local, visitante) VALUES(1, 'Agosto', 'Cruz Azul', 'Pumas'); ";
             //command.ExecuteNonQuery();
 
         }
@@ -136,6 +140,19 @@ namespace League_planner
                 else
                 {
                     return equipocontroller;
+                }
+            }
+        }
+        public static CalendarioDBController CalendarioController{
+            get
+            {
+                if(calendariocontroller == null)
+                {
+                    calendariocontroller = new CalendarioDBController(connection);
+                    return calendariocontroller;
+                }
+                else{
+                    return calendariocontroller;
                 }
             }
         }

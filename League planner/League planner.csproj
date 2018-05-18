@@ -72,6 +72,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Calendario.cs" />
+    <Compile Include="CalendarioCatalogo.xaml.cs">
+      <DependentUpon>CalendarioCatalogo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarioDBController.cs" />
+    <Compile Include="CalendarioPage.xaml.cs">
+      <DependentUpon>CalendarioPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TablaPage.xaml.cs">
       <DependentUpon>TablaPage.xaml</DependentUpon>
     </Compile>
@@ -84,6 +92,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ArbitrosCatalogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CalendarioCatalogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CalendarioPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

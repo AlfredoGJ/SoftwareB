@@ -93,9 +93,12 @@ C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\Leagu
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\bin\Debug\EntityFramework.xml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\bin\Debug\System.Data.SQLite.xml
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\League planner.csprojResolveAssemblyReference.cache
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\AdminMainWindow.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\ArbitroPage.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\ArbitrosCatalogo.g.cs
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\CalendarioCatalogo.g.cs
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\CalendarioPage.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EntrenadorMainWindow.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoEstadisticasPage.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoPage.g.cs
@@ -111,6 +114,8 @@ C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\Leagu
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\AdminMainWindow.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\ArbitroPage.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\ArbitrosCatalogo.baml
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\CalendarioCatalogo.baml
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\CalendarioPage.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EntrenadorMainWindow.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoEstadisticasPage.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoPage.baml

@@ -77,5 +77,10 @@ namespace League_planner
             Window.GetWindow(this).Close();
 
         }
+
+        private void Calendario_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Window.GetWindow(this).Content = new CalendarioCatalogo(this);
+        }
     }
 }
