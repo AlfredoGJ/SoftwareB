@@ -24,6 +24,7 @@ namespace League_planner
         Calendario calendario;
 
         public Calendario Calendario{get; set;}
+
         public CalendarioPage(Calendario c, Page previous)
         {
 
