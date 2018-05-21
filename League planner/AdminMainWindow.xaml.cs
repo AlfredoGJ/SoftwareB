@@ -82,5 +82,10 @@ namespace League_planner
         {
             Window.GetWindow(this).Content = new CalendarioCatalogo(this);
         }
+
+        private void addusers_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Window.GetWindow(this).Content = new IncidenciasCatalogo(this, new Gol());
+        }
     }
 }

@@ -47,14 +47,17 @@
                     Click="button_Click_2"
                     Content="Agregar Evento" HorizontalAlignment="Left" Margin="688,102,0,0" VerticalAlignment="Top" Width="109" Height="46"/>
 
-            <ListView x:Name="listaEventos" Height="244" VerticalAlignment="Top" Margin="122,168,295,0" SelectionChanged="listaEventos_SelectionChanged">
+            <ListView x:Name="listaEventos" Height="464" VerticalAlignment="Top" Margin="122,168,231,0" SelectionChanged="listaEventos_SelectionChanged">
                 <ListView.ItemTemplate >
                     <DataTemplate >
                         <StackPanel Orientation="Horizontal"  >
-                            <TextBlock Text="{Binding dia}" FontSize="20"/>
-                            <TextBlock Text="{Binding mes}" FontSize="20"/>
-                            <TextBlock Text="{Binding local}" FontSize="20"/>
-                            <TextBlock Text="{Binding visitante}" FontSize="20"/>
+                            <TextBlock Text="{Binding dia}" FontSize="20" FontFamily="Arial" Foreground="Green"/>
+                            <TextBlock Text="      " FontSize="20" FontFamily="Arial"/>
+                            <TextBlock Text="{Binding mes}" FontSize="20" FontFamily="Arial" Foreground="Green"/>
+                            <TextBlock Text=".       " FontSize="20" FontFamily="Arial"/>
+                            <TextBlock Text="{Binding local}" FontSize="20" FontFamily="Arial"/>
+                            <TextBlock Text="       vs.        " FontSize="20" FontFamily="Arial" Foreground="Blue"/>
+                            <TextBlock Text="{Binding visitante}" FontSize="20" FontFamily="Arial"/>
                         </StackPanel>
 
                     </DataTemplate>

@@ -22,7 +22,7 @@ namespace League_planner
     {
         Page previousPage;
         Calendario calendario;
-
+       
         public Calendario Calendario{get; set;}
 
         public CalendarioPage(Calendario c, Page previous)
@@ -62,7 +62,14 @@ namespace League_planner
 
         private void button_Click_2(object sender, RoutedEventArgs e)
         {
-            if(dia.Text != null && mes.Text != null && local.Text != null && visitante.Text != null)
+            
+            if(dia.Text != null && mes != null)
+            {
+                calendario.dia = Convert.ToInt32(dia.Text);
+                calendario.mes = mes.Text;
+                App.CalendarioController.Save(calendario);
+            }
+           /* if(dia.Text != null && mes.Text != null && local.Text != null && visitante.Text != null)
             {
                 calendario.dia = Convert.ToInt32( dia.Text);
                 calendario.mes = mes.Text;
@@ -71,8 +78,32 @@ namespace League_planner
                 App.CalendarioController.Save(calendario);
                 MessageBox.Show("id: " + calendario.id + "\ndia: " + calendario.dia + "\nmes: " + calendario.mes + "\nlocal: " + calendario.local + "\nVisitante: " + calendario.visitante);
                 Window.GetWindow(this).Content = previousPage;
-            }
+            }*/
             
+        }
+
+        private void equipoLocal_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (equipoLocal.SelectedItem != null)
+            {
+                Equipo local = (equipoLocal.SelectedItem as Equipo);
+                calendario.local = local.Nombre;
+            }
+        }
+
+        private void equipoVisitante_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(equipoVisitante.SelectedItem != null)
+            {
+                Equipo visitante = (equipoVisitante.SelectedItem as Equipo);
+                calendario.visitante = visitante.Nombre;
+            }
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            equipoLocal.ItemsSource = App.EquipoController.GetAll();
+            equipoVisitante.ItemsSource = App.EquipoController.GetAll();
         }
     }
 }

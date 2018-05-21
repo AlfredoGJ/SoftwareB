@@ -58,7 +58,7 @@
                 <RowDefinition  />
             </Grid.RowDefinitions>
 
-            <Grid Grid.Column="1" Margin="70,58,360,22"  HorizontalAlignment="Stretch" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Grid Grid.Column="1" Margin="67,57,363,23"  HorizontalAlignment="Stretch" Grid.ColumnSpan="2" Grid.RowSpan="2">
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="198"/>
@@ -104,6 +104,13 @@
 
                 <Label Content="Email" Grid.Row="7" FontSize="20"/>
                 <Label Grid.Row="7" Grid.Column="1" FontSize="18" x:Name="email"  IsEnabled="False"/>
+                <Label x:Name="label" Content="Equipo: " 
+                       FontFamily="Arial"
+                       FontSize="20" Foreground="Blue"
+                       HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="116,57,0,0"/>
+                <Label x:Name="equipo"
+                       FontSize="20" FontFamily="Arial"
+                       Grid.Column="1" HorizontalAlignment="Left" Margin="213,62,0,0" VerticalAlignment="Top" Height="28" Width="130"/>
 
 
 

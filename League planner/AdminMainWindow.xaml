@@ -84,7 +84,9 @@
 
                 </StackPanel>
 
-                <StackPanel x:Name="addusers" Grid.Column="3" Grid.Row="2"  Background="#60bde5" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10">
+                <StackPanel x:Name="addusers" Grid.Column="3" Grid.Row="2"  Background="#60bde5" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" 
+                            MouseLeftButtonUp="addusers_MouseLeftButtonUp"
+                            Margin="10">
 
 
                     <Label FontSize="30" Foreground="#fff" >Incidencias</Label>

@@ -81,5 +81,20 @@ namespace League_planner
         {
             Window.GetWindow(this).DragMove();
         }
+
+        private void equipos_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           if(equipos.SelectedItem != null)
+            {
+                Equipo equipo = (equipos.SelectedItem as Equipo);
+                jugador.Equipo = Convert.ToInt32(equipo.id);
+            }
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            equipos.ItemsSource = App.EquipoController.GetAll();
+            
+        }
     }
 }

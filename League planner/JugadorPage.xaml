@@ -6,6 +6,7 @@
       xmlns:local="clr-namespace:League_planner"
       mc:Ignorable="d" 
       d:DesignHeight="720" d:DesignWidth="1280"
+      Loaded="Page_Loaded"
       Title="JugadorPage">
 
     <DockPanel >
@@ -78,6 +79,22 @@
 
                 <Label Content="Email" Grid.Row="7" FontSize="20"/>
                 <TextBox  Grid.Row="7" Grid.Column="2" Margin="3" x:Name="email" FontSize="18" HorizontalAlignment="Left" Width="300" Text="{Binding Path=Email}"/>
+                <Label x:Name="label" Content="Equipo:" 
+                       FontFamily="Arial" FontSize="20" Foreground="Blue"
+                       Grid.Column="1" HorizontalAlignment="Left" Margin="35,79,0,0" VerticalAlignment="Top" Height="43" Width="80"/>
+                <ComboBox x:Name="equipos"
+                          SelectionChanged="equipos_SelectionChanged"
+                 Grid.Column="1" HorizontalAlignment="Left" Margin="134,88,0,0" VerticalAlignment="Top" Width="150">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Nombre}"
+                                           FontFamily="Arial"
+                                           FontSize="20"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
 
 
 
@@ -89,11 +106,11 @@
                 <Button   Foreground="White" Background="ForestGreen" Click="Aceptar" Margin="3" Width="200">Aceptar</Button>
                 <Button  Foreground="White" Background="Red" Click="Cancelar" Margin="3" Width="200">Cancelar</Button>
             </StackPanel>
-           
+
 
         </DockPanel>
-        
-       
+
+
 
     </DockPanel>
 

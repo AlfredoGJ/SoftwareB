@@ -80,6 +80,14 @@
     <Compile Include="CalendarioPage.xaml.cs">
       <DependentUpon>CalendarioPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Gol.cs" />
+    <Compile Include="GolDBController.cs" />
+    <Compile Include="IncidenciasCatalogo.xaml.cs">
+      <DependentUpon>IncidenciasCatalogo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IncidenciasPage.xaml.cs">
+      <DependentUpon>IncidenciasPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TablaPage.xaml.cs">
       <DependentUpon>TablaPage.xaml</DependentUpon>
     </Compile>
@@ -116,6 +124,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EquiposCatalogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IncidenciasCatalogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IncidenciasPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -102,6 +102,8 @@ C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\Leagu
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoEstadisticasPage.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoPage.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquiposCatalogo.g.cs
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\IncidenciasCatalogo.g.cs
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\IncidenciasPage.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\JugadoresCatalogo.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\JugadorPage.g.cs
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\LoginWindow.g.cs
@@ -119,6 +121,8 @@ C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\Leagu
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoEstadisticasPage.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquipoPage.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\EquiposCatalogo.baml
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\IncidenciasCatalogo.baml
+C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\IncidenciasPage.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\JugadoresCatalogo.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\JugadorPage.baml
 C:\Users\Andrey Hernandez\Documents\1. Ingenieria en Informatica\SoftwareB\League planner\obj\Debug\LoginWindow.baml

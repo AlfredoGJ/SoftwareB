@@ -20,6 +20,7 @@ namespace League_planner
         static ArbitroDBController arbitrocontroller;
         static EquipoDBController equipocontroller;
         static CalendarioDBController calendariocontroller;
+        static GolDBController golController;
         static SQLiteConnection connection;
 
 
@@ -73,7 +74,7 @@ namespace League_planner
             command.ExecuteNonQuery();
 
             //Creacion de tabla goles
-            command.CommandText = "CREATE TABLE goles(id INTEGER PRIMARY KEY AUTOINCREMENT," + " clave_jugador int, clave_partido int, favor_o_contra int);";
+            command.CommandText = "CREATE TABLE goles(id INTEGER PRIMARY KEY AUTOINCREMENT," + " clave_jugador int, clave_partido int, favor_o_contra int, gol int);";
             command.ExecuteNonQuery();
 
             //Creacion de tabla tarjetas
@@ -153,6 +154,21 @@ namespace League_planner
                 }
                 else{
                     return calendariocontroller;
+                }
+            }
+        }
+        public static GolDBController GolController
+        {
+            get
+            {
+                if(golController == null)
+                {
+                    golController = new GolDBController(connection);
+                    return golController;
+                }
+                else
+                {
+                    return golController;
                 }
             }
         }
