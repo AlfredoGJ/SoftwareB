@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:League_planner"
       mc:Ignorable="d" 
       d:DesignHeight="720" d:DesignWidth="1280"
-      
+      FontFamily="Arial" FontSize="20"
       Loaded="UpdateJugadores"
       Title="JugadoresCatalogo">
 

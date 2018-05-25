@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:League_planner"
       mc:Ignorable="d" 
       d:DesignHeight="720" d:DesignWidth="1280"
-      
+      FontFamily="Arial" FontSize="20"
       Loaded="UpdateArbitros"
       Title="ArbitrosCatalogo">
 
@@ -135,9 +135,9 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Button  Grid.Column="1" Margin="2,0,0,20" Foreground="White"   Click="ArbitroNuevo" Background="LawnGreen">Agregar</Button>
-                <Button  Grid.Column="2"   Margin="2,0,0,20" Foreground="White"  Click="EliminarArbitro" Background="IndianRed">Eliminar</Button>
-                <Button  Grid.Column="0"   Margin="2,0,0,20"  Foreground="White" Click="EditarArbitro" Background="CornflowerBlue">Editar</Button>
+                <Button  Grid.Column="1" FontFamily="Arial" FontSize="20" Margin="2,0,0,20" Foreground="White"   Click="ArbitroNuevo" Background="LawnGreen">Agregar</Button>
+                <Button  Grid.Column="2" FontFamily="Arial" FontSize="20"   Margin="2,0,0,20" Foreground="White"  Click="EliminarArbitro" Background="IndianRed">Eliminar</Button>
+                <Button  Grid.Column="0 " FontFamily="Arial" FontSize="20"   Margin="2,0,0,20"  Foreground="White" Click="EditarArbitro" Background="CornflowerBlue">Editar</Button>
             </Grid>
 
 
@@ -150,12 +150,11 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Button Margin="2,0,0,20" Grid.Column="0"  Click="GoToFirst">Primero</Button>
-                <Button Margin="2,0,0,20" Grid.Column="1"  Click="GoToPrevious">Anterior</Button>
-                <Button Margin="2,0,0,20" Grid.Column="2"  Click="GoToNext">Siguiente</Button>
-                <Button Margin="2,0,0,20" Grid.Column="3" Click="GoToLast" >Ultimo</Button>
+                <Button Margin="2,0,0,20" FontFamily="Arial" FontSize="20" Grid.Column="0"  Click="GoToFirst">Primero</Button>
+                <Button Margin="2,0,0,20" FontFamily="Arial" FontSize="20" Grid.Column="1"  Click="GoToPrevious">Anterior</Button>
+                <Button Margin="2,0,0,20" FontFamily="Arial" FontSize="20" Grid.Column="2"  Click="GoToNext">Siguiente</Button>
+                <Button Margin="2,0,0,20" FontFamily="Arial" FontSize="20" Grid.Column="3" Click="GoToLast" >Ultimo</Button>
             </Grid>
-            <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Grid.Row="1"/>
 
         </Grid>
 
