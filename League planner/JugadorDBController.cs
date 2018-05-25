@@ -97,11 +97,28 @@ namespace League_planner
                 adapter.Fill(table);
                 foreach (DataRow row in table.Rows)
                 {
-                    jugadores.Add(new Jugador(row.Field<Int64>(0),row.Field<string>(1), row.Field<string>(2), row.Field<string>(3),row.Field<DateTime>(4),row.Field<string>(5),row.Field<string>(6),row.Field<int>(7)>0, row.Field<int>(8)));
+                    jugadores.Add(new Jugador(row.Field<Int64>(0),row.Field<string>(1), row.Field<string>(2), row.Field<string>(3),row.Field<DateTime>(4),row.Field<int>(5),row.Field<string>(6),row.Field<int>(7)>0, row.Field<int>(8)));
                 }
             }
             return jugadores;
                            
+        }
+        public List<Jugador> GetPlayer(int clave)
+        {
+            
+            DataTable table = new DataTable();
+            List<Jugador> jugadores = new List<Jugador>();
+            string command = "SELECT * FROM jugadores WHERE clave_equipo=clave";
+         
+            using (SQLiteDataAdapter adapter = new SQLiteDataAdapter(command, database))
+            {
+                adapter.Fill(table);
+                foreach (DataRow row in table.Rows)
+                {
+                    jugadores.Add(new Jugador(row.Field<Int64>(0), row.Field<string>(1), row.Field<string>(2), row.Field<string>(3), row.Field<DateTime>(4), row.Field<int>(5), row.Field<string>(6), row.Field<int>(7) > 0, row.Field<int>(8)));
+                }
+            }
+            return jugadores;
         }
 
 

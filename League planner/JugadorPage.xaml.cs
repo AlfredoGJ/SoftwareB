@@ -64,17 +64,43 @@ namespace League_planner
         /// <param name="e">Argumentods del evento (no controlado por el usuario)</param>
         public void Aceptar(object sender, EventArgs e)
         {
-            if (nombre != null && paterno != null && materno != null)
+            int cel = 0;
+            if (nombre.Text != null && paterno.Text != null && materno.Text != null && telefono.Text != null && email.Text != null && nacimiento.Text != null)
             {
-
+               
+                try
+                {
+                   
+                    jugador.Nombre = nombre.Text;
+                    jugador.ApellidoPaterno = paterno.Text;
+                    jugador.ApellidoMaterno = materno.Text;
+                    jugador.FechaDeNacimiento = Convert.ToDateTime(nacimiento.Text);
+                    jugador.Email = email.Text;
+                    if (telefono.Text.Length != 10)
+                    {
+                        MessageBox.Show("Error J-05\nEl número debe contener 10 digitos");
+                    }
+                    else
+                        cel = Convert.ToInt32(telefono.Text);
+                    jugador.Telefono = cel;
+                    App.JugadorController.Save(jugador);
+                    MessageBox.Show(jugador.Nombre);
+                    Window.GetWindow(this).Content = previousPage;
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show("Error J-03\nNo se pudo crear al jugador\n" + exception);
+                    
+                }
                 
-                App.JugadorController.Save(jugador);
-                MessageBox.Show(jugador.Nombre);
-                Window.GetWindow(this).Content = previousPage;
+                
 
             }
             else
-                MessageBox.Show("Complete todos los campos para el alumno");
+            {
+                MessageBox.Show("Error J-01\nComplete todos los campos");
+            }
+                
         }
 
         private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
@@ -89,11 +115,18 @@ namespace League_planner
                 Equipo equipo = (equipos.SelectedItem as Equipo);
                 jugador.Equipo = Convert.ToInt32(equipo.id);
             }
+           
         }
-
+        // Carga la pagina
+        // Si la base de datos no tiene equipos, manda un mensaje 
+        // no se podra crear jugadores si no hay equipos
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             equipos.ItemsSource = App.EquipoController.GetAll();
+            if(equipos == null)
+            {
+                 MessageBox.Show("Error J-02\nNo se puede crear jugadores debido a que no hay equipos disponibles");
+            }
             
         }
     }

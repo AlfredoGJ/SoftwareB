@@ -48,9 +48,9 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Border BorderThickness="2" BorderBrush="AliceBlue">
+                <Border BorderThickness="2" BorderBrush="AliceBlue" Margin="10,0,601,0" Grid.ColumnSpan="2">
 
-                    <Image Grid.Column="0" Grid.Row="0"  Source="user.jpg" Visibility="Visible" />
+                    <Image Grid.Column="0" Grid.Row="0"  Source="user.jpg" Visibility="Visible" Margin="201,0,0,0" HorizontalAlignment="Left" Width="375" />
                 </Border>
 
 

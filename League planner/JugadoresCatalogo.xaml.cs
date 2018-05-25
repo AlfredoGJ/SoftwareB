@@ -83,6 +83,7 @@ namespace League_planner
                 nacimiento.Content = jugador.FechaDeNacimiento.ToShortDateString();
                 telefono.Content = jugador.Telefono;
                 email.Content = jugador.Email;
+               
             }
 
         }

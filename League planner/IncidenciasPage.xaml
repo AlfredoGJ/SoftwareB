@@ -49,19 +49,17 @@
                    FontFamily="Arial" FontSize="20"
                    HorizontalAlignment="Left" Margin="433,168,0,0" VerticalAlignment="Top" Height="35" Width="137"/>
 
-            <ComboBox x:Name="Eventos" Margin="590,163,397,477" SelectionChanged="Eventos_SelectionChanged">
+            <ComboBox x:Name="Eventos" Margin="590,163,228,477" SelectionChanged="Eventos_SelectionChanged">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding id}" FontSize="20" Foreground="Blue"/>
+                            <TextBlock Text="{Binding id}" FontFamily="Arial" FontSize="20" Foreground="Blue" Name="idEquipo"/>
                             <TextBlock Text="    "/>
-                            <TextBlock Text="{Binding dia}" FontSize="20"/>
+                            <TextBlock Text="{Binding fecha}" FontFamily="Arial" FontSize="20" Foreground="Green"/>
+                            <TextBlock Text="      "/>
+                            <TextBlock Text="{Binding local}" FontFamily="Arial" FontSize="20"/>
                             <TextBlock Text="  "/>
-                            <TextBlock Text="{Binding mes}" FontSize="20"/>
-                            <TextBlock Text="  "/>
-                            <TextBlock Text="{Binding local}" FontSize="20"/>
-                            <TextBlock Text="  "/>
-                            <TextBlock Text="{Binding visitante}" FontSize="20"/>
+                            <TextBlock Text="{Binding visitante}" FontFamily="Arial" FontSize="20"/>
                         </StackPanel>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
@@ -77,7 +75,7 @@
                    FontFamily="Arial" FontSize="20"
                    HorizontalAlignment="Left" Margin="503,250,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
 
-            <TextBox x:Name="golLocal" TextWrapping="Wrap" Margin="1106,254,88,390"/>
+            <TextBox x:Name="golLocal" TextWrapping="Wrap" Margin="1106,254,88,390" FontSize="20" FontFamily="Arial"/>
             <Label x:Name="label4" Content="Equipo visitante" 
                    FontFamily="Arial" FontSize="20"
                    HorizontalAlignment="Left" Margin="182,313,0,0" VerticalAlignment="Top" Height="36" Width="152"/>
@@ -87,7 +85,7 @@
             <Label x:Name="label5" Content="Goles Anotados:" 
                    FontFamily="Arial" FontSize="20"
                    HorizontalAlignment="Left" Margin="917,254,0,0" VerticalAlignment="Top" Height="36" Width="159"/>
-            <TextBox x:Name="golVisitante" TextWrapping="Wrap" Margin="1106,312,88,327"/>
+            <TextBox x:Name="golVisitante" TextWrapping="Wrap" Margin="1106,312,88,327" FontFamily="Arial" FontSize="20"/>
             <ComboBox x:Name="jugadorLocal" 
                       SelectionChanged="jugadorLocal_SelectionChanged"
                       Margin="644,250,397,390">
@@ -123,7 +121,7 @@
             <Button x:Name="button" 
                     FontFamily="Arial" FontSize="20"
                     Foreground="white"
-                    MouseLeftButtonUp="button_MouseLeftButtonUp"
+                    Click="button_Click_2"
                     Background="Blue" BorderBrush="White"
                     Content="Agregar Incidencias" Margin="566,578,485,39"/>
 

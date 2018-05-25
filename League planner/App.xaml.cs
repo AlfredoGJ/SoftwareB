@@ -47,7 +47,7 @@ namespace League_planner
             SQLiteCommand command = new SQLiteCommand(connection);
             // Creacion de tabla jugadores
             command.CommandText = "CREATE TABLE jugadores(id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                " nombre varchar(50), apellidop varchar(50), apellidom varchar(50), nacimiento DATE, telefono varchar(10), email varchar(100), clave_equipo int, eliminado int);";
+                " nombre varchar(50), apellidop varchar(50), apellidom varchar(50), nacimiento DATE, telefono int, email varchar(100), clave_equipo int, eliminado int);";
             command.ExecuteNonQuery();
 /*
             //  SE AGREGAN JUGADORES PARA INIACIALIZAR LA BASE DE DATOS
@@ -140,7 +140,7 @@ namespace League_planner
 
             // Creacion de tabla entrenadores
             command.CommandText = "CREATE TABLE entrenadores(id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                " nombre varchar(50), apellidop varchar(50), apellidom varchar(50), nacimiento DATE, telefono varchar(10), email varchar(100), eliminado int);";
+                " nombre varchar(50), apellidop varchar(50), apellidom varchar(50), nacimiento DATE, telefono int, email varchar(100), eliminado int);";
             command.ExecuteNonQuery();
 
             // CREACION DE ENTRENADORES PARA INICIALIZACIN DE BASE DE DATOS
