@@ -97,7 +97,7 @@ namespace League_planner
 
 
             // SE AGREGAN ARBITROS PARA LA INICIALIZACION DE LA BASE DE DATOS
-
+            /*
             command.CommandText = "INSERT INTO arbitros(nombre, apellidop, apellidom, nacimiento, telefono, email,eliminado) " +
               "VALUES('Jose Sebastian', 'Sanchez', 'Beltran', '21-8-1975','8898902233','sebas_34@hotmail.com', 0); ";
             command.ExecuteNonQuery();
@@ -109,7 +109,7 @@ namespace League_planner
             command.CommandText = "INSERT INTO arbitros(nombre, apellidop, apellidom, nacimiento, telefono, email,eliminado) " +
              "VALUES('Amador', 'Barcenas', 'Colunga', '4-12-1985','8898902233','Abar_34@hotmail.com', 0); ";
             command.ExecuteNonQuery();
-
+            */
          
 
 

@@ -32,7 +32,7 @@
                 <Label FontSize="18"  HorizontalAlignment="Center">League Planner</Label>
             </StackPanel>
         </DockPanel>
-        <Grid >
+        <Grid Width="1274" >
 
             <Grid.ColumnDefinitions>
 
@@ -43,13 +43,15 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="159.5"/>
-                <RowDefinition Height="440.5"/>
+                <RowDefinition Height="302"/>
+                <RowDefinition Height="138"/>
                 <RowDefinition  />
             </Grid.RowDefinitions>
 
-            <Grid Grid.Column="0" Margin="40"  HorizontalAlignment="Stretch" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Grid Grid.Column="0" Margin="40"  HorizontalAlignment="Stretch" Grid.ColumnSpan="2" Grid.RowSpan="3">
 
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="0"/>
                     <RowDefinition Height="200"/>
                     <RowDefinition Height="40"/>
                     <RowDefinition Height="40"/>
@@ -67,29 +69,29 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Border BorderThickness="2" BorderBrush="AliceBlue">
+                <Border BorderThickness="2" BorderBrush="AliceBlue" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="126,0,494,0">
 
-                    <Image Grid.Column="0" Grid.Row="0"  Source="user.jpg" Margin="0,0,0,0" Visibility="Visible" />
+                    <Image Grid.Column="0" Grid.Row="0"  Source="arbitro.png" Margin="-2,-2,2,2" Visibility="Visible" />
                 </Border>
 
 
-                <Label Content="Id" Grid.Row="1"  FontSize="20"/>
-                <Label Grid.Row="1" Grid.Column="1" FontSize="18" x:Name="id" Foreground="Gray" IsEnabled="False"/>
+                <Label Content="Id" Grid.Row="2"  FontSize="20"/>
+                <Label Grid.Row="2" Grid.Column="1" FontSize="18" x:Name="id" Foreground="Gray" IsEnabled="False"/>
 
-                <Label Content="Nombre" Grid.Row="2"  FontSize="20"/>
-                <Label Grid.Row="2" Grid.Column="1" FontSize="18" x:Name="nombre"  IsEnabled="False"/>
+                <Label Content="Nombre" Grid.Row="3"  FontSize="20"/>
+                <Label Grid.Row="3" Grid.Column="1" FontSize="18" x:Name="nombre"  IsEnabled="False"/>
 
-                <Label Content="Apellido materno" Grid.Row="3" FontSize="20"/>
-                <Label Grid.Row="3" Grid.Column="2"  FontSize="18" x:Name="paterno"   IsEnabled="False"/>
+                <Label Content="Apellido materno" Grid.Row="4" FontSize="20"/>
+                <Label Grid.Row="4" Grid.Column="1"  FontSize="18" x:Name="paterno"   IsEnabled="False"/>
 
-                <Label Content="Apellido paterno" Grid.Row="4" FontSize="20"/>
-                <Label Grid.Row="4" Grid.Column="2" FontSize="18" x:Name="materno"  IsEnabled="False"/>
+                <Label Content="Apellido paterno" Grid.Row="5" FontSize="20"/>
+                <Label Grid.Row="5" Grid.Column="1" FontSize="18" x:Name="materno"  IsEnabled="False"/>
 
-                <Label Content="Fecha de nacimiento" Grid.Row="5" FontSize="20"/>
-                <Label Grid.Row="5" Grid.Column="2" FontSize="18" x:Name="nacimiento"  IsEnabled="False"/>
+                <Label Content="Fecha de nacimiento" Grid.Row="6" FontSize="20"/>
+                <Label Grid.Row="6" Grid.Column="1" FontSize="18" x:Name="nacimiento"  IsEnabled="False"/>
 
-                <Label Content="Telefono" Grid.Row="6" FontSize="20"/>
-                <Label Grid.Row="6" Grid.Column="2" FontSize="18" x:Name="telefono"  IsEnabled="False"/>
+                <Label Content="Telefono" Grid.Row="7" FontSize="20"/>
+                <Label Grid.Row="7" Grid.Column="1" FontSize="18" x:Name="telefono"  IsEnabled="False"/>
 
 
 
@@ -97,7 +99,7 @@
 
             </Grid>
 
-            <DockPanel Grid.Column="2"  HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.RowSpan="2">
+            <DockPanel Grid.Column="2"  HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.RowSpan="3">
 
                 <DockPanel  Height="30"  Width="380" FlowDirection="LeftToRight" DockPanel.Dock="Top">
                     <Button   Click="SearchArbitros"  DockPanel.Dock="Right">
@@ -126,7 +128,7 @@
 
             </DockPanel>
 
-            <Grid Grid.Column="2" Grid.Row="2" >
+            <Grid Grid.Column="2" Grid.Row="3" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -139,7 +141,7 @@
             </Grid>
 
 
-            <Grid Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2">
+            <Grid Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2">
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -153,7 +155,7 @@
                 <Button Margin="2,0,0,20" Grid.Column="2"  Click="GoToNext">Siguiente</Button>
                 <Button Margin="2,0,0,20" Grid.Column="3" Click="GoToLast" >Ultimo</Button>
             </Grid>
-            <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="10,220.5,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+            <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Grid.Row="1"/>
 
         </Grid>
 

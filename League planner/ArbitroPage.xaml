@@ -50,7 +50,7 @@
 
                 <Border BorderThickness="2" BorderBrush="AliceBlue">
 
-                    <Image Grid.Column="0" Grid.Row="0"  Source="user.jpg" Visibility="Visible" />
+                    <Image Grid.Column="0" Grid.Row="0"  Source="arbitro.png" Visibility="Visible" />
                 </Border>
 
 

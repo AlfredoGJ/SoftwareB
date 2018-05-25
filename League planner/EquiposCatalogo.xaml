@@ -18,10 +18,14 @@
                 _
             </Button>
             <Button Width="40" DockPanel.Dock="Left" Click="Back">
-                -
+                <Button.Content>
+                    <Image Source="left.ico"/>
+                </Button.Content>
             </Button>
             <Button Width="40" DockPanel.Dock="Left">
-                B
+                <Button.Content>
+                    <Image Source="burguer.ico"/>
+                </Button.Content>
             </Button>
             <StackPanel Background="LightGray" MouseDown="StackPanel_MouseDown" >
                 <Label FontSize="18"  HorizontalAlignment="Center">League Planner</Label>

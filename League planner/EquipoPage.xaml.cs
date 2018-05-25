@@ -46,14 +46,15 @@ namespace League_planner
         /// <param name="e">Argumentods del evento (no controlado por el usuario)</param>
         public void Aceptar(object sender, EventArgs e)
         {
-            if (nombre != null )
+            if (nombre.Text != null  && nombre.Text != "")
             {
+                equipo.Nombre = nombre.Text;
                 App.EquipoController.Save(equipo);
                 Window.GetWindow(this).Content = previousPage;
 
             }
             else
-                MessageBox.Show("Complete todos los campos para el equipo");
+                MessageBox.Show("Error E-01\nComplete el campo nombre para el equipo");
         }
 
         private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
