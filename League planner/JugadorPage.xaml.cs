@@ -64,37 +64,39 @@ namespace League_planner
         /// <param name="e">Argumentods del evento (no controlado por el usuario)</param>
         public void Aceptar(object sender, EventArgs e)
         {
-            int cel = 0;
+            long cel = 0;
             if (nombre.Text != null && paterno.Text != null && materno.Text != null && telefono.Text != null && email.Text != null && nacimiento.Text != null)
             {
                
                 try
                 {
                    
-                    jugador.Nombre = nombre.Text;
-                    jugador.ApellidoPaterno = paterno.Text;
-                    jugador.ApellidoMaterno = materno.Text;
-                    jugador.FechaDeNacimiento = Convert.ToDateTime(nacimiento.Text);
-                    jugador.Email = email.Text;
+                    
                     if (telefono.Text.Length != 10)
                     {
                         MessageBox.Show("Error J-05\nEl número debe contener 10 digitos");
                     }
                     else
-                        cel = Convert.ToInt32(telefono.Text);
-                    jugador.Telefono = cel;
-                    App.JugadorController.Save(jugador);
-                    MessageBox.Show(jugador.Nombre);
-                    Window.GetWindow(this).Content = previousPage;
+                    {
+                        jugador.Nombre = nombre.Text;
+                        jugador.ApellidoPaterno = paterno.Text;
+                        jugador.ApellidoMaterno = materno.Text;
+                        jugador.FechaDeNacimiento = Convert.ToDateTime(nacimiento.Text);
+                        jugador.Email = email.Text;
+                        cel = Convert.ToInt64(telefono.Text);
+                        jugador.Telefono = cel;
+                        App.JugadorController.Save(jugador);
+                        MessageBox.Show(jugador.Nombre);
+                        Window.GetWindow(this).Content = previousPage;
+                    }
+      
+                    
                 }
                 catch (Exception exception)
                 {
                     MessageBox.Show("Error J-03\nNo se pudo crear al jugador\n" + exception);
                     
                 }
-                
-                
-
             }
             else
             {

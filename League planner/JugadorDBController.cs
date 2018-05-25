@@ -97,7 +97,7 @@ namespace League_planner
                 adapter.Fill(table);
                 foreach (DataRow row in table.Rows)
                 {
-                    jugadores.Add(new Jugador(row.Field<Int64>(0),row.Field<string>(1), row.Field<string>(2), row.Field<string>(3),row.Field<DateTime>(4),row.Field<int>(5),row.Field<string>(6),row.Field<int>(7)>0, row.Field<int>(8)));
+                    jugadores.Add(new Jugador(row.Field<Int64>(0),row.Field<string>(1), row.Field<string>(2), row.Field<string>(3),row.Field<DateTime>(4),row.Field<Int64>(5),row.Field<string>(6),row.Field<int>(7)>0, row.Field<int>(8)));
                 }
             }
             return jugadores;
@@ -115,7 +115,7 @@ namespace League_planner
                 adapter.Fill(table);
                 foreach (DataRow row in table.Rows)
                 {
-                    jugadores.Add(new Jugador(row.Field<Int64>(0), row.Field<string>(1), row.Field<string>(2), row.Field<string>(3), row.Field<DateTime>(4), row.Field<int>(5), row.Field<string>(6), row.Field<int>(7) > 0, row.Field<int>(8)));
+                    jugadores.Add(new Jugador(row.Field<Int64>(0), row.Field<string>(1), row.Field<string>(2), row.Field<string>(3), row.Field<DateTime>(4), row.Field<Int64>(5), row.Field<string>(6), row.Field<int>(7) > 0, row.Field<int>(8)));
                 }
             }
             return jugadores;
