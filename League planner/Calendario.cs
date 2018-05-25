@@ -17,22 +17,21 @@ namespace League_planner
     	public string 	mes{get;set;}
     	public string 	local{get;set;}
     	public string 	visitante{get;set;}
+        public DateTime fecha { get; set; }
 
     	// Constructor con id 
-    	public Calendario(long id, int dia, string mes, string local, string visitante)
+    	public Calendario(long id, DateTime fecha, string local, string visitante)
     	{
     		this.id = id;
-    		this.dia = dia;
-    		this.mes = mes;
+            this.fecha = fecha;
     		this.local = local;
     		this.visitante = visitante;
     	}
 
     	// Constructor sin id
-    	public Calendario(int dia, string mes, string local, string visitante)
+    	public Calendario(DateTime fecha,string local, string visitante)
     	{
-    		this.dia = dia;
-    		this.mes = mes;
+            this.fecha = fecha;
     		this.local = local;
     		this.visitante = visitante;
     	}

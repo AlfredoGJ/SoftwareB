@@ -49,7 +49,7 @@ namespace League_planner
             command.CommandText = "CREATE TABLE jugadores(id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 " nombre varchar(50), apellidop varchar(50), apellidom varchar(50), nacimiento DATE, telefono varchar(10), email varchar(100), clave_equipo int, eliminado int);";
             command.ExecuteNonQuery();
-
+/*
             //  SE AGREGAN JUGADORES PARA INIACIALIZAR LA BASE DE DATOS
             command.CommandText = "INSERT INTO jugadores(nombre, apellidop, apellidom, nacimiento, telefono, email, clave_equipo,eliminado) " +
                 "VALUES('Ernesto', 'Juarez', 'Lopez', '12-7-1980','1333567612','ernestoc_A@gmail.com', 1, 0); ";
@@ -87,7 +87,7 @@ namespace League_planner
             command.CommandText = "INSERT INTO jugadores(nombre, apellidop, apellidom, nacimiento, telefono, email, clave_equipo,eliminado) " +
               "VALUES('Tomas Alberto', 'Ruiz', 'Anaya', '21-8-1991','8898902233','TommyRuiz@hotmail.com', 2, 0); ";
             command.ExecuteNonQuery();
-
+            */
 
 
             // Creacion de tabla arbitros
@@ -117,7 +117,7 @@ namespace League_planner
             command.CommandText = "CREATE TABLE equipos (id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 " nombre varchar(50), clave_entrenador int, eliminado int, activo int);";
             command.ExecuteNonQuery();
-
+            
             // CREACION DE EQUIPOS PARA LA INICUALIZACION DE LA BASE DE DATOS
 
             command.CommandText = "INSERT INTO equipos (nombre, clave_entrenador,eliminado, activo) " +
@@ -186,7 +186,7 @@ namespace League_planner
 
             //Creacion de tabla calendario
             command.CommandText = "CREATE TABLE calendarios(id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                                 " dia int, mes varchar(30), local varchar(30), visitante varchar(30));";
+                                 " fecha DateTime, local varchar(30), visitante varchar(30));";
             command.ExecuteNonQuery();
 
 

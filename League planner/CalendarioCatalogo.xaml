@@ -33,13 +33,10 @@
         <Grid Margin="0,0,0,10" Width="839">
             <Label x:Name="dia" Content="Día" 
                    FontFamily="Arial" FontSize="20"
-                   HorizontalAlignment="Left" Margin="122,102,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="mes" Content="Mes" 
-                FontFamily="Arial" FontSize="20"
-                HorizontalAlignment="Left" Margin="212,102,0,0" VerticalAlignment="Top"/>
+                   HorizontalAlignment="Left" Margin="91,102,0,0" VerticalAlignment="Top"/>
             <Label x:Name="local" Content="Local" 
                 FontFamily="Arial" FontSize="20"
-                HorizontalAlignment="Left" Margin="316,102,0,0" VerticalAlignment="Top"/>
+                HorizontalAlignment="Left" Margin="240,102,0,0" VerticalAlignment="Top"/>
             <Label x:Name="visitante" Content="Visitante" 
                 FontFamily="Arial" FontSize="20"
                 HorizontalAlignment="Left" Margin="458,102,0,0" VerticalAlignment="Top"/>
@@ -47,14 +44,13 @@
                     Click="button_Click_2"
                     Content="Agregar Evento" HorizontalAlignment="Left" Margin="688,102,0,0" VerticalAlignment="Top" Width="109" Height="46"/>
 
-            <ListView x:Name="listaEventos" Height="464" VerticalAlignment="Top" Margin="122,168,231,0" SelectionChanged="listaEventos_SelectionChanged">
+            <ListView x:Name="listaEventos" Height="464" VerticalAlignment="Top" Margin="38,168,231,0" SelectionChanged="listaEventos_SelectionChanged">
                 <ListView.ItemTemplate >
                     <DataTemplate >
                         <StackPanel Orientation="Horizontal"  >
-                            <TextBlock Text="{Binding dia}" FontSize="20" FontFamily="Arial" Foreground="Green"/>
+                            <TextBlock Text="{Binding fecha}" FontSize="20" FontFamily="Arial" Foreground="Green"/>
                             <TextBlock Text="      " FontSize="20" FontFamily="Arial"/>
-                            <TextBlock Text="{Binding mes}" FontSize="20" FontFamily="Arial" Foreground="Green"/>
-                            <TextBlock Text=".       " FontSize="20" FontFamily="Arial"/>
+                            
                             <TextBlock Text="{Binding local}" FontSize="20" FontFamily="Arial"/>
                             <TextBlock Text="       vs.        " FontSize="20" FontFamily="Arial" Foreground="Blue"/>
                             <TextBlock Text="{Binding visitante}" FontSize="20" FontFamily="Arial"/>

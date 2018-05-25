@@ -43,11 +43,8 @@
 
 
             </StackPanel>
-            <Label x:Name="label1" Content="Día" HorizontalAlignment="Left" Margin="541,158,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
-            <TextBox x:Name="dia" FontSize="20" Height="23" TextWrapping="Wrap" FontFamily="Arial" Margin="645,158,583,499"/>
-
-            <Label x:Name="label2" Content="Mes" HorizontalAlignment="Left" Margin="541,201,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
-            <TextBox x:Name="mes" FontSize="20" TextWrapping="Wrap" FontFamily="Arial" Margin="645,201,408,446"/>
+            <Label x:Name="label1" Content="Día" HorizontalAlignment="Left" Margin="541,199,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+            <TextBox x:Name="fecha" FontSize="20" Height="23" TextWrapping="Wrap" FontFamily="Arial" Margin="645,199,408,458"/>
 
             <Label x:Name="label3" Content="Local" HorizontalAlignment="Left" Margin="541,251,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
 

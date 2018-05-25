@@ -24,9 +24,8 @@ namespace League_planner
             {
             	if(calendario.id == 0)
             	{
-            		command.CommandText = "INSERT INTO calendarios(dia, mes, local, visitante) VALUES (@dia, @mes, @local, @visitante);";
-            		command.Parameters.AddWithValue("@dia",calendario.dia);
-            		command.Parameters.AddWithValue("@mes",calendario.mes);
+            		command.CommandText = "INSERT INTO calendarios(fecha, local, visitante) VALUES (@fecha, @local, @visitante);";
+            		command.Parameters.AddWithValue("@fecha",calendario.fecha);
             		command.Parameters.AddWithValue("@local",calendario.local);
             		command.Parameters.AddWithValue("@visitante", calendario.visitante);
 
@@ -36,9 +35,8 @@ namespace League_planner
                 }
             	else
             	{
-            		command.CommandText = "UPDATE calendarios SET dia= @dia, mes=@mes, local=@local, visitante=@visitante WHERE id= @id; ";
-            		command.Parameters.AddWithValue("@dia", calendario.dia);
-            		command.Parameters.AddWithValue("@mes", calendario.mes);
+            		command.CommandText = "UPDATE calendarios SET fecha=@fecha, local=@local, visitante=@visitante WHERE id= @id; ";
+            		command.Parameters.AddWithValue("@fecha", calendario.fecha);
             		command.Parameters.AddWithValue("@local", calendario.local);
             		command.Parameters.AddWithValue("@visitante", calendario.visitante);
 
@@ -60,8 +58,8 @@ namespace League_planner
         		adapter.Fill(table);
         		foreach(DataRow row in table.Rows)
         		{
-        									//                  id,			      dia,			      mes,		       	 local,			 ,visitante
-        			eventos.Add(new Calendario(row.Field<Int64>(0),row.Field<int>(1),row.Field<string>(2),row.Field<string>(3),row.Field<string>(4) ) );
+        									//              id,			      fecha,		       	 local,			 ,visitante
+        			eventos.Add(new Calendario(row.Field<Int64>(0),row.Field<DateTime>(1),row.Field<string>(2),row.Field<string>(3) ) );
         		}
         	}
         	return eventos;

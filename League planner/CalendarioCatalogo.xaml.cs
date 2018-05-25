@@ -28,14 +28,16 @@ namespace League_planner
             previousPage = previous;
             InitializeComponent();
 
+            /*
             if (listaEventos.SelectedItem != null)
             {
                 Calendario calendario = (listaEventos.SelectedItem as Calendario);
-                dia.Content = calendario.dia;
-                mes.Content = calendario.mes;
+                dia.Content = calendario.fecha.ToShortDateString();
+                
                 local.Content = calendario.local;
                 visitante.Content = calendario.visitante;
             }
+            */
         }
         private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
         {

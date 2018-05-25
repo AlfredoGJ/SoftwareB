@@ -52,10 +52,10 @@ namespace League_planner
             string command = "SELECT * FROM calendarios";
             using (SQLiteDataAdapter adapter = new SQLiteDataAdapter(command, database))
             {
-                adapter.Fill(table);
+                //adapter.Fill(table);
                 foreach(DataRow row in table.Rows)
                 {
-                    eventos.Add(new Calendario(row.Field<Int64>(0),row.Field<int>(1),row.Field<string>(2),row.Field<string>(3), row.Field<string>(4)));
+                    eventos.Add(new Calendario(row.Field<Int64>(0),row.Field<DateTime>(1),row.Field<string>(2), row.Field<string>(3)));
                 }
             }
             return eventos;
