@@ -33,7 +33,7 @@
             </StackPanel>
         </DockPanel>
         <Grid>
-            <StackPanel Margin="0,-10,0,10" >
+            <StackPanel Margin="10,-10,-10,10" >
                 <StackPanel Background="AliceBlue"  Height="100" Opacity=".7" Margin="20" Orientation="Horizontal"  >
                     <Image Width="446" Margin="-10,-10,20,0" Source="images/lp.png" Stretch="Uniform"/>
                     <DockPanel LastChildFill="False" Width="100"/>
@@ -43,21 +43,121 @@
 
 
             </StackPanel>
-            <Label x:Name="label1" Content="Día" HorizontalAlignment="Left" Margin="541,199,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
-            <TextBox x:Name="fecha" FontSize="20" Height="23" TextWrapping="Wrap" FontFamily="Arial" Margin="645,199,408,458"/>
+            <Label x:Name="label1" Content="Día" HorizontalAlignment="Left" Margin="645,141,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+            <ComboBox x:Name="dia" Margin="645,185,572,462" SelectionChanged="equipoLocal_SelectionChanged">
+                <ComboBoxItem><TextBlock Text="01" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="02" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="03" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="04" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="05" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="06" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="07" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="08" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="09" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="10" FontFamily="Arial" FontSize="17"/></ComboBoxItem>  
+                <ComboBoxItem><TextBlock Text="11" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="12" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="13" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="14" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="15" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="16" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="17" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="18" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="19" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="20" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="21" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="22" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="23" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="24" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="25" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="26" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="27" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="28" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="29" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="30" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                <ComboBoxItem><TextBlock Text="31" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                
+                
 
-            <Label x:Name="label3" Content="Local" HorizontalAlignment="Left" Margin="541,251,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+            </ComboBox>
+            <Label x:Name="label122" Content="Mes" HorizontalAlignment="Left" Margin="748,141,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+            <ComboBox x:Name="mes" Margin="748,185,469,462" SelectionChanged="equipoLocal_SelectionChanged">
+            
+                    <ComboBoxItem><TextBlock Text="01" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="02" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="03" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="04" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="05" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="06" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="07" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="08" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="09" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="10" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="11" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="12" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+             
 
-            <Label x:Name="label4" Content="Visitante" HorizontalAlignment="Left" Margin="541,298,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+
+
+            </ComboBox>
+            <Label x:Name="label124" Content="Año" HorizontalAlignment="Left" Margin="826,141,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+            <Label x:Name="años" Content="2018" HorizontalAlignment="Left" Margin="826,185,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+            <Label x:Name="label20" Content="Hora" HorizontalAlignment="Left" Margin="655,230,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+            <ComboBox x:Name="hora" Margin="645,268,572,379">
+                <ComboBoxItem><TextBlock Text="01" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="02" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="03" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="04" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="05" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="06" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="07" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="08" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="09" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="10" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="11" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="12" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+
+
+            </ComboBox>
+            <Label x:Name="label21" Content="Minutos" HorizontalAlignment="Left" Margin="734,230,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+            <ComboBox x:Name="minutos" Margin="733,268,484,379" >
+                    <ComboBoxItem><TextBlock Text="05" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="10" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="15" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="20" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="25" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="30" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="35" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="40" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="45" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="50" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+                    <ComboBoxItem><TextBlock Text="55" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+      
+
+
+            </ComboBox>
+
+            <ComboBox x:Name="tiempo" IsEnabled="false" Margin="809,268,408,379" SelectionChanged="equipoLocal_SelectionChanged">
+                <ComboBoxItem>
+                    <TextBlock Text="AM" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="PM" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+
+            </ComboBox>
+            <Label x:Name="label3" Content="Local" HorizontalAlignment="Left" Margin="541,315,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+
+            <Label x:Name="label4" Content="Visitante" HorizontalAlignment="Left" Margin="541,362,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
             <Button x:Name="button" 
                     FontSize="15" FontFamily="Arial"
                     Foreground="White" Background="Blue"
                     BorderBrush="white"
                     Content="Agregar Evento" HorizontalAlignment="Left" Width="166"
-                    Margin="645,396,0,226" 
+                    Margin="645,496,0,126" 
                     Click="button_Click_2"/>
 
-            <ComboBox x:Name="equipoLocal" Margin="645,251,408,396" SelectionChanged="equipoLocal_SelectionChanged">
+            <ComboBox x:Name="equipoLocal" Margin="645,315,408,332" SelectionChanged="equipoLocal_SelectionChanged">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -69,7 +169,7 @@
                 </ComboBox.ItemTemplate>
 
             </ComboBox>
-            <ComboBox x:Name="equipoVisitante" Margin="645,298,408,349" 
+            <ComboBox x:Name="equipoVisitante" Margin="645,362,408,285" 
                       SelectionChanged="equipoVisitante_SelectionChanged">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>

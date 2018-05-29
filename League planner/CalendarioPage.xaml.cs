@@ -78,38 +78,42 @@ namespace League_planner
         {
             
             // Sentencia if donde evalua si todos los campos han sido llenados
-            if(fecha.Text != null && equipoLocal.SelectedItem != null && equipoVisitante.SelectedItem != null){
-                try{
-                    fechaPartido = Convert.ToDateTime(fecha.Text);
-                }
-                catch (Exception exception){
-                    MessageBox.Show("ERROR 005\nEscriba en el formato correspondiente");
-                }
-                try{
-                    // variable que compara la fecha actual con la escrita por el usuario donde:
-                    // compara == 0, entonces tiene la misma fecha y no hay problema
-                    // compara >  0, entonces la fecha solicitada está en el pasado de la actual y requiere cambiar de fecha
-                    // compara <  0, entonces la fecha se puede agendar en la base de datos 
-                    
-                    compara = DateTime.Compare(Convert.ToDateTime(hoy.ToShortDateString()), Convert.ToDateTime(fechaPartido.ToShortDateString()));
-                    comparaEquipos = string.Compare(calendario.local, calendario.visitante);
-                    if(comparaEquipos ==  0){
-                        MessageBox.Show("ERROR: 002\nNo puede seleccionar al mismo equipo para local como para visitante");
+            if(dia.SelectedItem != null && mes.SelectedItem != null && hora.SelectedItem != null && minutos.SelectedItem != null  && equipoLocal.SelectedItem != null && equipoVisitante.SelectedItem != null){
+
+                int i;
+                i = 1;
+                try
+                {
+                    fechaPartido = new DateTime(Convert.ToInt32(años.Content), Convert.ToInt32(mes.Text), Convert.ToInt32(dia.Text), Convert.ToInt32(hora.Text), Convert.ToInt32(minutos.Text), 0);
+                    MessageBox.Show("Fecha =>" + fechaPartido);
+                    if (equipoVisitante.SelectedItem == equipoLocal.SelectedItem)
+                    {
+                        MessageBox.Show("Error C-02\n No se puede elegir al mismo equipo como local y visitante");
                     }
-                    else{
-                        if (compara > 0){
-                            MessageBox.Show("ERROR: 003\nNo puede agendar en está fecha");
+                    else
+                    {
+                        if (DateTime.Now > fechaPartido)
+                        {
+                            MessageBox.Show("ERROR: C-03\nNo se puede agendar en fechas anteriores");
                         }
-                        else{
-                            calendario.fecha = Convert.ToDateTime(fecha.Text);
+                        else
+                        {
+
+                            calendario.fecha = fechaPartido;
                             App.CalendarioController.Save(calendario);
                             MessageBox.Show("Evento creado correctamente");
+
+
                         }
-                    }   
+
+                    }
                 }
-                catch(InvalidCastException exception){
-                    MessageBox.Show("ERROR: 004\nError al insertar la fecha\n\n" + exception);
+                catch(Exception exception)
+                {
+                    MessageBox.Show("Error C-05\nEl día no existe");
                 }
+               
+
             }
             else{
                 MessageBox.Show("ERROR: 006\nComplete todos los campos");
@@ -144,7 +148,7 @@ namespace League_planner
         {
             equipoLocal.ItemsSource = App.EquipoController.GetAll();
             equipoVisitante.ItemsSource = App.EquipoController.GetAll();
-            fecha.Text = hoy.Date.ToShortDateString();    
+           // fecha.Text = hoy.Date.ToShortDateString();    
         }
     }
 }
