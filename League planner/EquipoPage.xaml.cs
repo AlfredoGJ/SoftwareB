@@ -48,9 +48,21 @@ namespace League_planner
         {
             if (nombre.Text != null  && nombre.Text != "")
             {
-                equipo.Nombre = nombre.Text;
-                App.EquipoController.Save(equipo);
-                Window.GetWindow(this).Content = previousPage;
+                if(nombre.Text.Any(x => char.IsNumber(x)))
+                {
+                    MessageBox.Show("Error E-03\nEl nombre no puede llevar numeros");
+                }
+                else if(nombre.Text.All(x=> char.IsLetter(x)))
+                {
+                    equipo.Nombre = nombre.Text;
+                    App.EquipoController.Save(equipo);
+                    Window.GetWindow(this).Content = previousPage;
+                }
+                else
+                {
+                    MessageBox.Show("Error E-04\nEl nombre no puede llevar simbolos");
+                }
+                
 
             }
             else
