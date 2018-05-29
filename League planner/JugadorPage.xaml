@@ -63,7 +63,7 @@
                 <!--<TextBox Grid.Row="1" Grid.Column="1" Margin="3" IsEnabled="False"/>-->
 
                 <Label Content="Nombre" Grid.Row="2" FontSize="20"/>
-                <TextBox Grid.Row="2" Grid.Column="1" Margin="3" FontSize="18" x:Name="nombre" Width="300" HorizontalAlignment="Left" Text="{Binding Path= Nombre}" />
+                <TextBox Grid.Row="2" Grid.Column="1" Margin="3" FontSize="18" x:Name="nombre" Width="300" HorizontalAlignment="Left" />
 
                 <Label Content="Apellido materno" Grid.Row="3" FontSize="20"/>
                 <TextBox Grid.Row="3" Grid.Column="2"  Margin="3" x:Name="paterno" FontSize="18"  HorizontalAlignment="Left" Width="300" Text="{Binding Path=ApellidoMaterno}"/>
@@ -75,10 +75,10 @@
                 <DatePicker Grid.Row="5" Grid.Column="2" Margin="3" x:Name="nacimiento" FontSize="18" HorizontalAlignment="Left" Width="300" Text="{Binding Path=FechaDeNacimiento}"/>
 
                 <Label Content="Telefono" Grid.Row="6" FontSize="20"/>
-                <TextBox  Grid.Row="6" Grid.Column="2" Margin="3" x:Name="telefono" FontSize="18" HorizontalAlignment="Left" Width="300" Text="{Binding Path=Telefono}"/>
+                <TextBox  Grid.Row="6" Grid.Column="1" Margin="69,2,0,4" x:Name="telefono" FontSize="18" HorizontalAlignment="Left" Width="234" Text="{Binding Path=Telefono}"/>
 
                 <Label Content="Email" Grid.Row="7" FontSize="20"/>
-                <TextBox  Grid.Row="7" Grid.Column="2" Margin="3" x:Name="email" FontSize="18" HorizontalAlignment="Left" Width="300" Text="{Binding Path=Email}"/>
+                <TextBox  Grid.Row="7" Grid.Column="1" Margin="3,3,0,3" x:Name="email" FontSize="18" HorizontalAlignment="Left" Width="222" />
                 <Label x:Name="label" Content="Equipo:" 
                        FontFamily="Arial" FontSize="20" Foreground="Blue"
                        Grid.Column="1" HorizontalAlignment="Left" Margin="35,79,0,0" VerticalAlignment="Top" Height="43" Width="80"/>
@@ -90,11 +90,60 @@
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="{Binding Nombre}"
                                            FontFamily="Arial"
-                                           FontSize="20"/>
+                                           FontSize="20" />
                             </StackPanel>
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
+                <ComboBox x:Name="correo" Grid.Column="1" HorizontalAlignment="Left" Margin="230,0,0,0" Grid.Row="7" VerticalAlignment="Top" Width="201" Height="37">
+                    <ComboBoxItem>
+                        <TextBlock Text="@hotmail.com" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="@gmail.com" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="@outlook.com" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="@yahoo.com" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+
+                </ComboBox>
+                <ComboBox x:Name="prefijo" Grid.Column="1" HorizontalAlignment="Left" Margin="3,2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="61" Height="34">
+                    <ComboBoxItem>
+                        <TextBlock Text="+1" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="+51" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="+52" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="+53" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="+54" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="+55" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="+56" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="+57" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="+58" FontFamily="Arial" FontSize="20"/>
+                    </ComboBoxItem>
+                </ComboBox>
+                <Label x:Name="label1" Content="* El numero telefonico debe ser de 10 digitos" Grid.Column="1" 
+                       FontFamily="Arial" FontSize="12" Foreground="Red"
+                       
+                       HorizontalAlignment="Left" Margin="326,9,0,0" 
+                       Grid.Row="6" VerticalAlignment="Top"/>
 
 
 

@@ -24,6 +24,7 @@ namespace League_planner
         Jugador jugador;
 
         public Jugador Jugador{get; set;}
+        DateTime nace;
 
         
         /// <summary>
@@ -65,43 +66,83 @@ namespace League_planner
         public void Aceptar(object sender, EventArgs e)
         {
             long cel = 0;
-            if (nombre.Text != null && paterno.Text != null && materno.Text != null && telefono.Text != null && email.Text != null && nacimiento.Text != null)
+            if(equipos.SelectedItem != null)
             {
-               
-                try
+                if (nombre.Text != null && paterno.Text != null && materno.Text != null && telefono.Text != null && email.Text != null && nacimiento.Text != null &&
+                    nombre.Text != "" && paterno.Text != "" && materno.Text != "")
                 {
-                   
-                    
-                    if (telefono.Text.Length != 10)
-                    {
-                        MessageBox.Show("Error J-05\nEl número debe contener 10 digitos");
+                    try{
+                        if(nombre.Text.Any(x => char.IsNumber(x)) || materno.Text.Any(x => char.IsNumber(x)) || paterno.Text.Any(x => char.IsNumber(x)))
+                        {
+                            MessageBox.Show("Error J-07\nNombre no debe llevar numeros o simbolos");
+                           
+                        }
+                        else
+                        {
+                            if ( telefono.Text.Length != 10 || telefono.Text.Any(x => !char.IsNumber(x)) )
+                            {
+                                MessageBox.Show("Error J-05\nEl número debe contener 10 digitos y ningún simbolo o letra");
+                            }
+                            else
+                            {
+                                jugador.Nombre = nombre.Text;
+                                jugador.ApellidoPaterno = paterno.Text;
+                                jugador.ApellidoMaterno = materno.Text;
+                                nace = Convert.ToDateTime(nacimiento.Text);
+                                if((DateTime.Now.Year - nace.Year) > 100 || (DateTime.Now.Year < nace.Year ) || ((DateTime.Now.Year - nace.Year) < 10))
+                                {
+                                    MessageBox.Show("La edad es correcta? ");
+                                }
+                                else
+                                {
+                                    jugador.FechaDeNacimiento = Convert.ToDateTime(nacimiento.Text);
+                                    if (email.Text.Contains("@"))
+                                    {
+                                        MessageBox.Show("Error J-06\nCorreo no valido");
+                                    }
+                                    else
+                                    {
+                                        if (correo.SelectedItem != null)
+                                        {
+                                            jugador.Email = email.Text + correo.Text;
+                                            cel = Convert.ToInt64(prefijo.Text + telefono.Text);
+                                            jugador.Telefono = cel;
+                                            App.JugadorController.Save(jugador);
+                                            MessageBox.Show(jugador.Nombre);
+                                            Window.GetWindow(this).Content = previousPage;
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("Error J-07\nSelecciona el tipo de correo electronico");
+                                        }
+
+                                    }
+                                }
+                                
+
+                            }
+                        }
+                        
+                        
+
+
                     }
-                    else
+                    catch (Exception exception)
                     {
-                        jugador.Nombre = nombre.Text;
-                        jugador.ApellidoPaterno = paterno.Text;
-                        jugador.ApellidoMaterno = materno.Text;
-                        jugador.FechaDeNacimiento = Convert.ToDateTime(nacimiento.Text);
-                        jugador.Email = email.Text;
-                        cel = Convert.ToInt64(telefono.Text);
-                        jugador.Telefono = cel;
-                        App.JugadorController.Save(jugador);
-                        MessageBox.Show(jugador.Nombre);
-                        Window.GetWindow(this).Content = previousPage;
+                        MessageBox.Show("Error J-03\nNo se pudo crear al jugador\n" + exception);
+
                     }
-      
-                    
                 }
-                catch (Exception exception)
+                else
                 {
-                    MessageBox.Show("Error J-03\nNo se pudo crear al jugador\n" + exception);
-                    
+                    MessageBox.Show("Error J-01\nComplete todos los campos");
                 }
             }
             else
             {
-                MessageBox.Show("Error J-01\nComplete todos los campos");
+                MessageBox.Show("Error J-05\nSeleccione un equipo");
             }
+            
                 
         }
 
