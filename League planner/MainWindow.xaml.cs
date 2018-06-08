@@ -30,6 +30,8 @@ namespace League_planner
         {
             InitializeComponent();
             App.StablishConnection();
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+
 
             if (user == "admin")
                 this.Content = new AdminMainWindow();

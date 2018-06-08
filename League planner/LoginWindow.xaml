@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:League_planner"
         mc:Ignorable="d"
         MouseDown="Grid_MouseDown"
-        Title="LoginWindow" Height="500" Width="350" WindowStyle="None">
+        Title="LoginWindow" Height="500" Width="350" WindowStyle="None"
+        KeyDown="Window_KeyDown"
+        
+        
+        >
 
     <DockPanel  >
 

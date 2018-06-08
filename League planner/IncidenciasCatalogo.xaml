@@ -19,12 +19,12 @@
             </Button>
             <Button Width="40" DockPanel.Dock="Left" Click="Back">
                 <Button.Content>
-                    <Image Source="left.ico"/>
+                    <Image Source="Images/left.ico"/>
                 </Button.Content>
             </Button>
             <Button Width="40" DockPanel.Dock="Left">
                 <Button.Content>
-                    <Image Source="burguer.ico"/>
+                    <Image Source="Images/burguer.ico"/>
                 </Button.Content>
             </Button>
             <StackPanel Background="LightGray" MouseDown="StackPanel_MouseDown" >
@@ -45,19 +45,16 @@
             <Label x:Name="label1" Content="Elegir Evento" 
                    FontFamily="Arial" FontSize="20"
                    HorizontalAlignment="Left" Margin="97,153,0,0" VerticalAlignment="Top" Height="35" Width="137"/>
-            <ComboBox x:Name="Eventos" Margin="239,153,748,487" 
+            <ComboBox x:Name="Eventos" Margin="239,153,620,487" 
                       SelectionChanged="Eventos_SelectionChanged">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding id}" FontSize="20" Foreground="Blue"/>
-                            <TextBlock Text="    "/>
-                            <TextBlock Text="{Binding dia}" FontSize="20"/>
-                            <TextBlock Text="  "/>
-                            <TextBlock Text="{Binding mes}" FontSize="20"/>
+                            
+                            <TextBlock Text="{Binding fecha}" FontSize="20"/>
                             <TextBlock Text="  "/>
                             <TextBlock Text="{Binding local}" FontSize="20"/>
-                            <TextBlock Text="  "/>
+                            <TextBlock Text=" VS " FontSize="20"/>
                             <TextBlock Text="{Binding visitante}" FontSize="20"/>
 
                         </StackPanel>
@@ -98,7 +95,7 @@
             <Button x:Name="button" Content="Agregar Incidencias"
                     FontFamily="Arial" FontSize="20"
                     Click="button_Click_2"
-                    HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" Margin="567,153,0,0" Height="48"/>
+                    HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" Margin="767,153,0,0" Height="48"/>
 
 
         </Grid>

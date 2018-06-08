@@ -21,6 +21,7 @@ namespace League_planner
     {
         public LoginWindow()
         {
+            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             InitializeComponent();
         }
 
@@ -31,16 +32,24 @@ namespace League_planner
                 Window w = new MainWindow(usuario.Text);
                 w.Show();
                 this.Close();
-               
+
             }
 
-            if (usuario.Text == "coach" && contraseña.Password == "1234")
+            else if (usuario.Text == "coach" && contraseña.Password == "1234")
             {
                 Window w = new MainWindow(usuario.Text);
                 w.Show();
                 this.Close();
 
             }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña invalidos, Intente de nuevo ");
+                usuario.Clear();
+                contraseña.Clear();
+            }
+
+
 
 
 
@@ -51,6 +60,14 @@ namespace League_planner
             this.DragMove();
             Console.WriteLine("alksdjlaksjdlk");
             
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                LogIn(new object(), null);
+            }
         }
     }
 }

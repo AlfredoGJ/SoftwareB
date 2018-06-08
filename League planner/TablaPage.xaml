@@ -12,7 +12,7 @@
         <DockPanel x:Name="Toolbar" Height="40" DockPanel.Dock="Top">
             <Button Width="40" DockPanel.Dock="Right"  Click="Cerrar" BorderBrush="red">
                 <Button.Content>
-                    <Image Source="close-icon.ico" Width="40" Height="40"/>
+                    <Image Source="Images/close-icon.ico" Width="40" Height="40"/>
                 </Button.Content>
             </Button>
             <Button Width="40" Background="Black" Foreground="White" DockPanel.Dock="Right" FontSize="18" Click="Minimizar">
@@ -21,7 +21,7 @@
             <Grid >
                 <Button Click="Back" Width="40">
                     <Button.Content>
-                        <Image Source="left.ico"/>
+                        <Image Source="Images/left.ico"/>
                     </Button.Content>
 
                 </Button>
@@ -30,7 +30,7 @@
 
             <Button Width="40" DockPanel.Dock="Left">
                 <Button.Content>
-                    <Image Source="burguer.ico"/>
+                    <Image Source="Images/burguer.ico"/>
                 </Button.Content>
 
             </Button>

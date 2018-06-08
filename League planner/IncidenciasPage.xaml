@@ -22,12 +22,12 @@
             </Button>
             <Button Width="40" DockPanel.Dock="Left" Click="Back">
                 <Button.Content>
-                    <Image Source="left.ico"/>
+                    <Image Source="Images/left.ico"/>
                 </Button.Content>
             </Button>
             <Button Width="40" DockPanel.Dock="Left">
                 <Button.Content>
-                    <Image Source="burguer.ico"/>
+                    <Image Source="Images/burguer.ico"/>
                 </Button.Content>
             </Button>
             <StackPanel Background="LightGray" MouseDown="StackPanel_MouseDown" >
@@ -47,9 +47,9 @@
             </StackPanel>
             <Label x:Name="label1" Content="Elegir Evento" 
                    FontFamily="Arial" FontSize="20"
-                   HorizontalAlignment="Left" Margin="433,168,0,0" VerticalAlignment="Top" Height="35" Width="137"/>
+                   HorizontalAlignment="Left" Margin="182,135,0,0" VerticalAlignment="Top" Height="35" Width="137" RenderTransformOrigin="-0.456,0.4"/>
 
-            <ComboBox x:Name="Eventos" Margin="590,163,228,477" SelectionChanged="Eventos_SelectionChanged">
+            <ComboBox x:Name="Eventos" Margin="360,135,458,505" SelectionChanged="Eventos_SelectionChanged">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -67,63 +67,195 @@
             </ComboBox>
             <Label x:Name="label2" Content="Equipo Local" 
                    FontFamily="Arial" FontSize="20"
-                   HorizontalAlignment="Left" Margin="182,246,0,0" VerticalAlignment="Top" Height="36" Width="138"/>
+                   HorizontalAlignment="Left" Margin="64,216,0,0" VerticalAlignment="Top" Height="36" Width="138"/>
             <Label x:Name="local" IsEnabled="False" Content="{Binding local}"
-                   FontFamily="Arial" FontSize="20"
-                   HorizontalAlignment="Left" Margin="360,250,0,0" VerticalAlignment="Top" Height="36" Width="138"/>
-            <Label x:Name="label3" Content="Jugador" 
-                   FontFamily="Arial" FontSize="20"
-                   HorizontalAlignment="Left" Margin="503,250,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
-
-            <TextBox x:Name="golLocal" TextWrapping="Wrap" Margin="1106,254,88,390" FontSize="20" FontFamily="Arial"/>
+                   FontFamily="Arial" FontSize="30"
+                   HorizontalAlignment="Left" Margin="207,216,0,0" VerticalAlignment="Top" Height="54" Width="269"/>
+            <Label x:Name="label3" Content="Goles" 
+                   FontFamily="Arial" FontSize="24"
+                   HorizontalAlignment="Left" Margin="64,257,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
             <Label x:Name="label4" Content="Equipo visitante" 
                    FontFamily="Arial" FontSize="20"
-                   HorizontalAlignment="Left" Margin="182,313,0,0" VerticalAlignment="Top" Height="36" Width="152"/>
+                   HorizontalAlignment="Left" Margin="829,216,0,0" VerticalAlignment="Top" Height="36" Width="152"/>
             <Label x:Name="visitante" IsEnabled="False" 
-                   FontFamily="Arial" FontSize="20"
-                   HorizontalAlignment="Left" Margin="360,313,0,0" VerticalAlignment="Top" Height="36" Width="138"/>
-            <Label x:Name="label5" Content="Goles Anotados:" 
-                   FontFamily="Arial" FontSize="20"
-                   HorizontalAlignment="Left" Margin="917,254,0,0" VerticalAlignment="Top" Height="36" Width="159"/>
-            <TextBox x:Name="golVisitante" TextWrapping="Wrap" Margin="1106,312,88,327" FontFamily="Arial" FontSize="20"/>
+                   FontFamily="Arial" FontSize="30"
+                   HorizontalAlignment="Left" Margin="1002,216,0,0" VerticalAlignment="Top" Height="54" Width="242"/>
             <ComboBox x:Name="jugadorLocal" 
                       SelectionChanged="jugadorLocal_SelectionChanged"
-                      Margin="644,250,397,390">
+                      Margin="162,291,958,349">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="{Binding Nombre}" FontSize="20" FontFamily="Arial"/>
-                
+
                         </StackPanel>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
+
+            <Button Width="100" Height="30" Margin="351,297,829,353" Click="Button_Click_4">
+                <TextBlock Text="agregar" FontSize="18"></TextBlock>
+
+            </Button>
             <Label x:Name="label8" Content="Jugador" 
                    FontFamily="Arial" FontSize="20"
-                   HorizontalAlignment="Left" Margin="503,313,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
-            <ComboBox x:Name="jugadorVisitane"
-                      SelectionChanged="jugadorVisitane_SelectionChanged"
-                      Margin="644,313,397,327">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding Nombre}" FontSize="20" FontFamily="Arial"/>
-
-                        </StackPanel>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
-
-            <Label x:Name="label9" Content="Goles Anotados:" 
-                   FontFamily="Arial" FontSize="20"
-                   HorizontalAlignment="Left" Margin="917,313,0,0" VerticalAlignment="Top" Height="36" Width="159"/>
+                   HorizontalAlignment="Left" Margin="64,291,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
 
             <Button x:Name="button" 
                     FontFamily="Arial" FontSize="20"
                     Foreground="white"
                     Click="button_Click_2"
                     Background="Blue" BorderBrush="White"
-                    Content="Agregar Incidencias" Margin="566,578,485,39"/>
+                    Content="Agregar Incidencias" Margin="536,578,515,39"
+                     />
+            <Label x:Name="label3_Copy1" Content="Tarjetas" 
+                FontFamily="Arial" FontSize="24"
+                HorizontalAlignment="Left" Margin="60,347,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
+            <ComboBox x:Name="jugadorLocal_Copy" 
+                SelectionChanged="jugadorLocal_SelectionChanged"
+                Margin="162,397,958,243">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Nombre}" FontSize="20" FontFamily="Arial"/>
+
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Label x:Name="label8_Copy1" Content="Jugador" 
+                FontFamily="Arial" FontSize="20"
+                HorizontalAlignment="Left" Margin="58,399,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
+
+            <ComboBox x:Name="tipoTLocal" FontSize="20" 
+                Margin="162,458,1011,182">
+                <ComboBoxItem>
+                    <TextBlock Text="Amarilla">
+
+                    </TextBlock>
+                </ComboBoxItem>
+
+                <ComboBoxItem>
+                    <TextBlock Text="Roja">
+
+                    </TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+
+            <ListView Margin="58,517,804,39" x:Name="ILocal" FontSize="18">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding desc}">
+
+                            </TextBlock>
+                        </StackPanel>
+
+                    </DataTemplate>
+
+
+                </ListView.ItemTemplate>
+
+
+
+
+            </ListView>
+            <Label x:Name="label8_Copy2" Content="tipo" 
+                FontFamily="Arial" FontSize="20"
+                HorizontalAlignment="Left" Margin="60,458,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
+            <Button Width="100" Height="30" Margin="351,397,829,253" Click="Button_Click_5">
+                <TextBlock Text="agregar" FontSize="18"/>
+
+            </Button>
+            <Label x:Name="label3_Copy" Content="Goles" 
+                FontFamily="Arial" FontSize="24"
+                HorizontalAlignment="Left" Margin="832,257,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
+            <ComboBox x:Name="jugadorVisitante" 
+                SelectionChanged="jugadorLocal_SelectionChanged"
+                Margin="930,291,190,349">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Nombre}" FontSize="20" FontFamily="Arial"/>
+
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Button Width="100" Height="30" Margin="1119,297,61,353" Click="Button_Click_6">
+                <TextBlock Text="agregar" FontSize="18"/>
+
+            </Button>
+            <Label x:Name="label8_Copy" Content="Jugador" 
+                FontFamily="Arial" FontSize="20"
+                HorizontalAlignment="Left" Margin="832,291,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
+            <Label x:Name="label3_Copy2" Content="Tarjetas" 
+                FontFamily="Arial" FontSize="24"
+                HorizontalAlignment="Left" Margin="828,347,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
+            <ComboBox x:Name="jugadorVisitante_Copy" 
+                SelectionChanged="jugadorLocal_SelectionChanged"
+                Margin="930,397,190,243">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Nombre}" FontSize="20" FontFamily="Arial"/>
+
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Label x:Name="label8_Copy3" Content="Jugador" 
+                FontFamily="Arial" FontSize="20"
+                HorizontalAlignment="Left" Margin="826,399,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
+            <ComboBox x:Name="tipoTVisitante" 
+                FontSize="20"
+                Margin="930,458,243,182">
+                <ComboBoxItem>
+                    <TextBlock Text="Amarilla">
+
+                    </TextBlock>
+                </ComboBoxItem>
+
+                <ComboBoxItem>
+                    <TextBlock Text="Roja">
+
+                    </TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+            <ListView Margin="826,517,36,39" x:Name="IVisitante" FontSize="18">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding desc}">
+
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label x:Name="label8_Copy4" Content="tipo" 
+                FontFamily="Arial" FontSize="20"
+                HorizontalAlignment="Left" Margin="828,458,0,0" VerticalAlignment="Top" Height="36" Width="99"/>
+            <Button Width="100" Height="30" Margin="1119,397,61,253" Click="Button_Click_7">
+                <TextBlock Text="agregar" FontSize="18"/>
+
+            </Button>
+            <Button   Width="100" Height="30" Margin="376,640,804,10" Click="Button_Click_8" >
+                <TextBlock Text="Eliminar" FontSize="18"/>
+
+            </Button>
+            <Button   Width="100" Height="30" Margin="826,641,354,9" Click="Button_Click_9" >
+                <TextBlock Text="Eliminar" FontSize="18"/>
+
+            </Button>
+            <Label x:Name="golesL" Content="0" 
+                Foreground="CadetBlue"
+                FontFamily="Arial" FontSize="70"
+                HorizontalAlignment="Left" Margin="566,268,0,0" VerticalAlignment="Top" Height="87" Width="56"/>
+            <Label x:Name="golesV" Content="0" 
+                   Foreground="CadetBlue"
+                FontFamily="Arial" FontSize="70"
+                HorizontalAlignment="Left" Margin="666,268,0,0" VerticalAlignment="Top" Height="87" Width="53"/>
 
 
 

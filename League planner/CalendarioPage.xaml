@@ -20,12 +20,12 @@
             </Button>
             <Button Width="40" DockPanel.Dock="Left" Click="Back">
                 <Button.Content>
-                    <Image Source="left.ico"/>
+                    <Image Source="Images/left.ico"/>
                 </Button.Content>
             </Button>
             <Button Width="40" DockPanel.Dock="Left">
                 <Button.Content>
-                    <Image Source="burguer.ico"/>
+                    <Image Source="Images/burguer.ico"/>
                 </Button.Content>
             </Button>
             <StackPanel Background="LightGray" MouseDown="StackPanel_MouseDown" >
@@ -116,6 +116,43 @@
                     <ComboBoxItem><TextBlock Text="10" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
                     <ComboBoxItem><TextBlock Text="11" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
                     <ComboBoxItem><TextBlock Text="12" FontFamily="Arial" FontSize="17"/></ComboBoxItem>
+
+                <ComboBoxItem>
+                    <TextBlock Text="13" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="14" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="15" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="16" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="17" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="18" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="19" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="20" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="21" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="22" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="23" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>
+                <!--<ComboBoxItem>
+                    <TextBlock Text="24" FontFamily="Arial" FontSize="17"/>
+                </ComboBoxItem>-->
 
 
             </ComboBox>

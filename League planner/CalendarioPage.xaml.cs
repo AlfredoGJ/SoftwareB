@@ -86,13 +86,13 @@ namespace League_planner
                 {
                     fechaPartido = new DateTime(Convert.ToInt32(años.Content), Convert.ToInt32(mes.Text), Convert.ToInt32(dia.Text), Convert.ToInt32(hora.Text), Convert.ToInt32(minutos.Text), 0);
                     MessageBox.Show("Fecha =>" + fechaPartido);
-                    if (equipoVisitante.SelectedItem == equipoLocal.SelectedItem)
+                    if ((equipoVisitante.SelectedItem as Equipo).id == (equipoLocal.SelectedItem as Equipo).id)
                     {
                         MessageBox.Show("Error C-02\n No se puede elegir al mismo equipo como local y visitante");
                     }
                     else
                     {
-                        if (DateTime.Now > fechaPartido)
+                        if (DateTime.Now.CompareTo( fechaPartido)>0)
                         {
                             MessageBox.Show("ERROR: C-03\nNo se puede agendar en fechas anteriores");
                         }

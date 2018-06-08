@@ -18,12 +18,12 @@
             </Button>
             <Button Width="40" DockPanel.Dock="Left" Click="Back">
                 <Button.Content>
-                    <Image Source="left.ico"/>
+                    <Image Source="Images/left.ico"/>
                 </Button.Content>
             </Button>
             <Button Width="40" DockPanel.Dock="Left">
                 <Button.Content>
-                    <Image Source="burguer.ico"/>
+                    <Image Source="Images/burguer.ico"/>
                 </Button.Content>
             </Button>
             <StackPanel Background="LightGray" MouseDown="StackPanel_MouseDown" >
