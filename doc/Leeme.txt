@@ -1,0 +1,15 @@
+////Credenciales para acceder a la aplicacón///
+******************************************************************
+
+////////////////////
+-Administrador
+usuario: admin
+contraseña: root
+////////////////////
+
+
+///////////////////
+-Usuario
+usuario: coach
+contraseña 1234
+/////////////////// 

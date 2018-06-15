@@ -33,29 +33,29 @@
 
                 </Grid.RowDefinitions>
 
-                <StackPanel x:Name="jugadores" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="2" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" MouseLeftButtonUp="JugadoresMouseLeftButtonUp" Margin="5">
+                <StackPanel x:Name="jugadores" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="2" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" MouseLeftButtonUp="GoleoMouseLeftButtonUp" Margin="5">
                     <StackPanel.Background >
-                        <ImageBrush ImageSource="images/equipos.jpg" Stretch="UniformToFill"/>
+                        <ImageBrush ImageSource="images/jugadores.jpg" Stretch="UniformToFill"/>
 
 
 
                     </StackPanel.Background>
-                    <Label FontSize="60" Foreground="#fff" Content="Mi equipo"/>
+                    <Label FontSize="60" Foreground="#fff" Content="Tabla de Goleo"/>
 
 
                 </StackPanel>
 
               
 
-                <StackPanel x:Name="equipo" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"  MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" MouseLeftButtonUp="EquiposMouseLeftButtonUp" Margin="5">
+                <StackPanel x:Name="resultados" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"  MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave"  Margin="5" MouseLeftButtonUp="resultados_MouseLeftButtonUp">
                     <StackPanel.Background>
                         <ImageBrush ImageSource="images/line-bw.jpeg" Stretch="UniformToFill"/>
                     </StackPanel.Background>
 
-                    <Label FontSize="60" Foreground="#fff" >Alineación</Label>
+                    <Label FontSize="60" Foreground="#fff" >Resultados</Label>
                 </StackPanel>
 
-                <StackPanel x:Name="Calendario" Grid.Column="2"  MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10" Grid.RowSpan="3">
+                <StackPanel x:Name="Calendario" Grid.Column="2"  MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10" Grid.RowSpan="3" MouseUp="Calendario_MouseUp">
                     <StackPanel.Background>
                         <ImageBrush ImageSource="images/calendar.jpg" Stretch="UniformToFill"/>
 
@@ -64,7 +64,7 @@
                     <Label FontSize="60" Foreground="#fff" >Calendario</Label>
                 </StackPanel>
 
-                <StackPanel x:Name="tabla" Grid.Column="3" Grid.RowSpan="3" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10" MouseUp="tabla_MouseUp">
+                <StackPanel x:Name="tabla" Grid.Column="3" Grid.RowSpan="3" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10" MouseUp="TablaMouseUp">
 
                     <StackPanel.Background>
                         <ImageBrush ImageSource="images/butaca.png" Stretch="UniformToFill"/>
@@ -72,7 +72,7 @@
                     </StackPanel.Background>
 
 
-                    <Label FontSize="60" Foreground="#fff" >Tabla</Label>
+                    <Label FontSize="45" Foreground="#fff" Height="93" >Tabla General</Label>
                     <Image Source="images/ranking.png" Width="200" Margin="0,60,0,0"/>
 
                 </StackPanel>

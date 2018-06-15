@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace League_planner
 {
+    /// <summary>
+    /// Se encarga de guardar los datos de un equipo como nombre, y id 
+    /// </summary>
     public class Equipo
     {
         public long id { get; set; }

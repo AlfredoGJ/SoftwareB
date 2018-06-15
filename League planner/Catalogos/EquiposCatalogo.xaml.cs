@@ -59,12 +59,16 @@ namespace League_planner
         {
             if (listaEquipos.SelectedItem != null)
             {
-                App.EquipoController.Delete((listaEquipos.SelectedItem as Equipo).id);
-                UpdateEquipos(sender, e);
+                if (MessageBox.Show("Esta seguro que quiere eliminar Este Elemento?", "Confirmar eliminación", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
 
-                // Se resetean los campos del jugador seleccionado eliminado
-                id.Content = "";
-                nombre.Content = "";
+                {
+                    App.EquipoController.Delete((listaEquipos.SelectedItem as Equipo).id);
+                    UpdateEquipos(sender, e);
+
+                    // Se resetean los campos del jugador seleccionado eliminado
+                    id.Content = "";
+                    nombre.Content = "";
+                }
             }
         }
         private void EditarEquipo(object sender, RoutedEventArgs e)

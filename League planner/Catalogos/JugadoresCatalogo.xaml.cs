@@ -75,16 +75,18 @@ namespace League_planner
         {
             if (listaJugadores.SelectedItem != null)
             {
-                Jugador jugador = (listaJugadores.SelectedItem as Jugador);
-                id.Content = jugador.id.ToString();
-                nombre.Content = jugador.Nombre;
-                paterno.Content = jugador.ApellidoPaterno;
-                materno.Content = jugador.ApellidoMaterno;
-                DateTime nac = jugador.FechaDeNacimiento;
-                nacimiento.Content = nac.Day+"/"+nac.Month+"/"+nac.Year ;
-                telefono.Content = jugador.Telefono;
-                email.Content = jugador.Email;
-                equipo.Content = App.EquipoController.GetAll().Find(x => x.id == jugador.Equipo).Nombre;
+               
+                    Jugador jugador = (listaJugadores.SelectedItem as Jugador);
+                    id.Content = jugador.id.ToString();
+                    nombre.Content = jugador.Nombre;
+                    paterno.Content = jugador.ApellidoPaterno;
+                    materno.Content = jugador.ApellidoMaterno;
+                    DateTime nac = jugador.FechaDeNacimiento;
+                    nacimiento.Content = nac.Day + "/" + nac.Month + "/" + nac.Year;
+                    telefono.Content = jugador.Telefono;
+                    email.Content = jugador.Email;
+                    equipo.Content = App.EquipoController.GetAll().Find(x => x.id == jugador.Equipo).Nombre;
+                
                
             }
 
@@ -100,17 +102,21 @@ namespace League_planner
         {
             if (listaJugadores.SelectedItem != null)
             {
-                App.JugadorController.Delete((listaJugadores.SelectedItem as Jugador).id);
-                UpdateJugadores(sender, e);
+                if (MessageBox.Show("Esta seguro que quiere eliminar Este Elemento?", "Confirmar eliminación", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
 
-                // Se resetean los campos del jugador seleccionado eliminado
-                id.Content = "";
-                nombre.Content = "";
-                materno.Content = "";
-                paterno.Content = "";
-                nacimiento.Content = "";
-                telefono.Content = "";
-                email.Content = "";
+                {
+                    App.JugadorController.Delete((listaJugadores.SelectedItem as Jugador).id);
+                    UpdateJugadores(sender, e);
+
+                    // Se resetean los campos del jugador seleccionado eliminado
+                    id.Content = "";
+                    nombre.Content = "";
+                    materno.Content = "";
+                    paterno.Content = "";
+                    nacimiento.Content = "";
+                    telefono.Content = "";
+                    email.Content = "";
+                }
 
             }
         }

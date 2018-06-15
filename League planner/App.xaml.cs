@@ -39,7 +39,7 @@ namespace League_planner
                 connection.Open();
             }
 
-            MessageBox.Show("Conexion exitosa");
+            //MessageBox.Show("Conexion exitosa","Espere");
         }
 
         private static void CreateDatabase()
@@ -175,11 +175,11 @@ namespace League_planner
             command.ExecuteNonQuery();
 
             //Creacion de tabla goles
-            command.CommandText = "CREATE TABLE goles(id INTEGER PRIMARY KEY AUTOINCREMENT," + " clave_jugador int, clave_partido int, favor_o_contra int);";
+            command.CommandText = "CREATE TABLE goles(id INTEGER PRIMARY KEY AUTOINCREMENT," + " clave_jugador int, clave_partido int, favor_o_contra int, clave_equipo int);";
             command.ExecuteNonQuery();
 
             //Creacion de tabla tarjetas
-            command.CommandText = "CREATE TABLE tarjetas(id INTEGER PRIMARY KEY AUTOINCREMENT," + "clave_jugador int, tipo varchar(10), clave_partido int);";
+            command.CommandText = "CREATE TABLE tarjetas(id INTEGER PRIMARY KEY AUTOINCREMENT," + "clave_jugador int, tipo varchar(10), clave_partido int, clave_equipo int);";
             command.ExecuteNonQuery();
 
             //Creacion de tabla usuarios

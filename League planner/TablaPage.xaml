@@ -39,23 +39,54 @@
             </StackPanel>
         </DockPanel>
 
+        <StackPanel Orientation="Vertical">
+            <Label FontSize="40" Margin="50,10,50,0">
+                <StackPanel Background="AliceBlue"  Height="100" Opacity=".7" Margin="0,20,0,0" Orientation="Horizontal"  Width="1240"  >
+                    <Image Width="262" Margin="-10,-10,20,0" Source="images/lp.png" Stretch="Uniform"/>
+                    <DockPanel LastChildFill="False" Width="100"/>
+                    <Label FontSize="60" HorizontalAlignment="Center" Margin="10,0,0,0" Content="Tabla General" Width="463"/>
+                </StackPanel>
+            </Label>
 
-        <ListView x:Name="tabla" Margin="50">
+            <StackPanel  Height="60" Margin="50,50,50,0" Background="Bisque" Orientation="Horizontal">
+                <TextBlock Padding="5" Text="Pos" FontSize="30" Background="#43A047" Width="80" TextAlignment="Center" ></TextBlock>
+                <TextBlock Padding="5" Text="Equipo" FontSize="30" Background="#4FC3F7" Width="300" TextAlignment="Center" ></TextBlock>
+                <TextBlock Padding="5" Text="PJ" FontSize="30" Background="#787878" Width="100" TextAlignment="Center" ></TextBlock>
+                <TextBlock Padding="5" Text="PG" FontSize="30" Background="#9CCC65" Width="100" TextAlignment="Center" ></TextBlock>
+                <TextBlock Padding="5" Text="PE" FontSize="30" Background="#FFCA28" Width="100" TextAlignment="Center" ></TextBlock>
+                <TextBlock Padding="5" Text="PP" FontSize="30" Background="#ef5350" Width="100" TextAlignment="Center" ></TextBlock>
+                <TextBlock Padding="5" Text="GF" FontSize="30" Background="#9CCC65" Width="100" TextAlignment="Center" ></TextBlock>
+                <TextBlock Padding="5" Text="GC" FontSize="30" Background="#ef5350" Width="100" TextAlignment="Center" ></TextBlock>
+                <TextBlock Padding="5" Text="Dif" FontSize="30" Background="#29B6F6" Width="100" TextAlignment="Center" ></TextBlock>
+                <TextBlock Padding="5" Text="Pts" FontSize="30" Background="#29B6F6" Width="100" TextAlignment="Center" ></TextBlock>
 
-            
 
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal" Background="Azure" >
-                        <Image  Width="80" Height="80"  />
-                        <TextBlock Text="{Binding Nombre}" FontSize="20" Width="300" VerticalAlignment="Center"/>
-                        <TextBlock Text="{Binding Puntos}" FontSize="20" Width="50" VerticalAlignment="Center"/>
-                        <TextBlock Text="{Binding Diferencia}" FontSize="20" Width="50" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-            
-        </ListView>
-        
+            </StackPanel>
+            <ListView x:Name="tabla" Margin="50,0,50,50" Height="420">
+
+
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Background="Azure" >
+                            <TextBlock Text="{Binding Pos}" FontSize="24" Width="80" TextAlignment="Center"></TextBlock>
+                            <TextBlock Text="{Binding Nombre}" FontSize="24" Width="300" VerticalAlignment="Center" TextAlignment="Left"/>
+                            <TextBlock Text="{Binding PartidosJ}" FontSize="24" Width="100" VerticalAlignment="Center" TextAlignment="Center" />
+                            <TextBlock Text="{Binding PartidosG}" FontSize="24" Width="100" VerticalAlignment="Center" TextAlignment="Center"/>
+                            <TextBlock Text="{Binding PartidosE}" FontSize="24" Width="100" VerticalAlignment="Center" TextAlignment="Center"/>
+                            <TextBlock Text="{Binding PartidosP}" FontSize="24" Width="100" VerticalAlignment="Center" TextAlignment="Center"/>
+                            <TextBlock Text="{Binding Golesf}" FontSize="24" Width="100" VerticalAlignment="Center" TextAlignment="Center"/>
+                            <TextBlock Text="{Binding Golesc}" FontSize="24" Width="100" VerticalAlignment="Center" TextAlignment="Center"/>
+                            <TextBlock Text="{Binding Diferencia}" FontSize="24" Width="100" VerticalAlignment="Center" TextAlignment="Center"/>
+                            <TextBlock Text="{Binding Puntos}" FontSize="24" Width="100" VerticalAlignment="Center" TextAlignment="Center"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </StackPanel>
+
+
     </DockPanel>
 </Page>

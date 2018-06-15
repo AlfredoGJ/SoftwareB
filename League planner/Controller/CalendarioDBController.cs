@@ -20,27 +20,30 @@ namespace League_planner
 
         public void Save(Calendario calendario)
         {
-        	using (SQLiteCommand command = new SQLiteCommand(database))
+            using (SQLiteCommand command = new SQLiteCommand(database))
             {
-            	if(calendario.id == 0)
-            	{
-            		command.CommandText = "INSERT INTO calendarios(fecha, local, visitante) VALUES (@fecha, @local, @visitante);";
-            		command.Parameters.AddWithValue("@fecha",calendario.fecha);
-            		command.Parameters.AddWithValue("@local",calendario.local);
-            		command.Parameters.AddWithValue("@visitante", calendario.visitante);
+                if (calendario.id == 0)
+                {
+                    command.CommandText = "INSERT INTO calendarios(fecha, local, visitante, ganador) VALUES (@fecha, @local, @visitante, @ganador);";
+                    command.Parameters.AddWithValue("@fecha", calendario.fecha);
+                    command.Parameters.AddWithValue("@local", calendario.local);
+                    command.Parameters.AddWithValue("@visitante", calendario.visitante);
+                    command.Parameters.AddWithValue("@ganador", calendario.ganador);
 
                     command.ExecuteNonQuery();
                     calendario.id = database.LastInsertRowId;
-                 
-                }
+
+                } 
+
             	else
             	{
-            		command.CommandText = "UPDATE calendarios SET fecha=@fecha, local=@local, visitante=@visitante WHERE id= @id; ";
+            		command.CommandText = "UPDATE calendarios SET fecha=@fecha, local=@local, visitante=@visitante, ganador= @ganador WHERE id= @id; ";
             		command.Parameters.AddWithValue("@fecha", calendario.fecha);
             		command.Parameters.AddWithValue("@local", calendario.local);
             		command.Parameters.AddWithValue("@visitante", calendario.visitante);
-
-            		command.ExecuteNonQuery();
+                    command.Parameters.AddWithValue("@ganador", calendario.ganador);
+                    command.Parameters.AddWithValue("@id", calendario.id);
+                    command.ExecuteNonQuery();
             	}
             }
         }
@@ -59,7 +62,7 @@ namespace League_planner
         		foreach(DataRow row in table.Rows)
         		{
         									//              id,			      fecha,		       	 local,			 ,visitante
-        			eventos.Add(new Calendario(row.Field<Int64>(0),row.Field<DateTime>(1),row.Field<string>(2),row.Field<string>(3) ) );
+        			eventos.Add(new Calendario(row.Field<Int64>(0),row.Field<DateTime>(1),row.Field<string>(2),row.Field<string>(3), row.Field<Int64>(4)) );
         		}
         	}
         	return eventos;

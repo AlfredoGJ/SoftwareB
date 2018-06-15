@@ -67,16 +67,22 @@ namespace League_planner
         {
             if (listaArbitros.SelectedItem != null)
             {
-                App.ArbitroController.Delete((listaArbitros.SelectedItem as Arbitro).id);
-                UpdateArbitros(sender, e);
 
-                // Se resetean los campos del jugador seleccionado eliminado
-                id.Content = "";
-                nombre.Content = "";
-                materno.Content = "";
-                paterno.Content = "";
-                nacimiento.Content = "";
-                telefono.Content = "";
+                if(MessageBox.Show("Esta seguro que quiere eliminar Este Elemento?","Confirmar eliminación",MessageBoxButton.YesNo)==MessageBoxResult.Yes)
+
+                {
+                    App.ArbitroController.Delete((listaArbitros.SelectedItem as Arbitro).id);
+                    UpdateArbitros(sender, e);
+
+                    // Se resetean los campos del jugador seleccionado eliminado
+                    id.Content = "";
+                    nombre.Content = "";
+                    materno.Content = "";
+                    paterno.Content = "";
+                    nacimiento.Content = "";
+                    telefono.Content = "";
+                }
+              
               
 
             }

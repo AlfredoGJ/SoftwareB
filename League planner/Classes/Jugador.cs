@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace League_planner
 {
+    /// <summary>
+    /// Clase Que sirve para guardar los datos de un jugador como: id, Nombre, apellido materno, apellido paterno, fecha de nacimiento, telefono, e-mail clave del equipo al que pertenece
+    /// </summary>
     public class Jugador
     {
         public long id { get; set; }

@@ -44,9 +44,9 @@ namespace League_planner
             panel.Margin = new Thickness(10);
         }
 
-        private void JugadoresMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void GoleoMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            Window.GetWindow(this).Content = new EquipoEstadisticasPage(this);
+            Window.GetWindow(this).Content = new GoleoPage(this);
         }
 
         private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
@@ -55,14 +55,7 @@ namespace League_planner
                 Window.GetWindow(this).DragMove();
         }
 
-        private void AribtrosMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            Window.GetWindow(this).Content = new ArbitrosCatalogo(this);
-        }
-        private void EquiposMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            Window.GetWindow(this).Content = new EquiposCatalogo(this);
-        }
+        
 
         private void Salir(object sender, RoutedEventArgs e)
         {
@@ -77,9 +70,19 @@ namespace League_planner
 
         }
 
-        private void tabla_MouseUp(object sender, MouseButtonEventArgs e)
+        private void TablaMouseUp(object sender, MouseButtonEventArgs e)
         {
             Window.GetWindow(this).Content = new TablaPage(this);
+        }
+
+        private void Calendario_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            Window.GetWindow(this).Content = new CalendarioViewPage(this);
+        }
+
+        private void resultados_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Window.GetWindow(this).Content = new ResultsPage(this);
         }
     }
 }

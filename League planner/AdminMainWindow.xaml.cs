@@ -85,7 +85,17 @@ namespace League_planner
 
         private void addusers_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            Window.GetWindow(this).Content = new IncidenciasCatalogo(this, new Gol());
+            Window.GetWindow(this).Content = new IncidenciasPage(this, new Gol());
+        }
+
+        private void tabla_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            Window.GetWindow(this).Content = new TablaPage(this);
+        }
+
+        private void usuarios_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            Window.GetWindow(this).Content = new GoleoPage(this);
         }
     }
 }

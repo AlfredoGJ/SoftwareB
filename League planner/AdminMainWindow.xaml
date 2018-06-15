@@ -40,7 +40,7 @@
 
 
                     </StackPanel.Background>
-                    <Label FontSize="60" Foreground="#fff" Content="Jugadores"/>
+                    <Label FontSize="60" Foreground="#fff" Content="Catalogo Jugadores"/>
 
 
                 </StackPanel>
@@ -50,15 +50,17 @@
                         <ImageBrush ImageSource="images/arbitross.jpg" Stretch="UniformToFill"/>
                     </StackPanel.Background>
 
-                    <Label FontSize="60" Foreground="#fff">Arbitros</Label>
+                    <Label FontSize="60"  Foreground="#fff"  >Catalogo arbitros</Label>
                 </StackPanel>
 
                 <StackPanel x:Name="equipo" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"  MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" MouseLeftButtonUp="EquiposMouseLeftButtonUp" Margin="5">
                     <StackPanel.Background>
-                        <ImageBrush ImageSource="images/equipos.jpg" Stretch="UniformToFill"/>
+                        
+                        <ImageBrush  ImageSource="images/equipos.jpg" Stretch="UniformToFill" />
+                        
                     </StackPanel.Background>
 
-                    <Label FontSize="60" Foreground="#fff" >Equipos</Label>
+                    <Label FontSize="60" Foreground="#fff" >Catalogo Equipos</Label>
                 </StackPanel>
 
                 <StackPanel x:Name="Calendario" MouseLeftButtonUp="Calendario_MouseLeftButtonUp"
@@ -71,15 +73,15 @@
                     <Label FontSize="60" Foreground="#fff" >Calendario</Label>
                 </StackPanel>
 
-                <StackPanel x:Name="tabla" Grid.Column="3" Grid.RowSpan="2" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10">
+                <StackPanel x:Name="tabla" Grid.Column="3" Grid.RowSpan="2" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10" MouseUp="tabla_MouseUp">
 
                     <StackPanel.Background>
                         <ImageBrush ImageSource="images/butaca.png" Stretch="UniformToFill"/>
 
                     </StackPanel.Background>
-                  
 
-                    <Label FontSize="60" Foreground="#fff" >Tabla</Label>
+
+                    <Label FontSize="45" Foreground="#fff" Height="122" >Tabla general</Label>
                     <Image Source="images/ranking.png" Width="120"/>
 
                 </StackPanel>
@@ -93,9 +95,9 @@
                     <Image Source="images/incid.png" Width="110" Margin="10,-15,0,0"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Vertical" x:Name="usuarios" Grid.Column="2" Grid.Row="0" Background="BlueViolet" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10">
+                <StackPanel Orientation="Vertical" x:Name="usuarios" Grid.Column="2" Grid.Row="0" Background="BlueViolet" MouseEnter="PanelMouseEnter" MouseLeave="PanelMouseLeave" Margin="10" MouseUp="usuarios_MouseUp">
 
-                    <Label FontSize="30" Foreground="#fff" >Administrar usuarios</Label>
+                    <Label FontSize="30" Foreground="#fff" >Tabla de Goleo</Label>
 
                     <Image Width="110" Source="images/useraccount.png" Stretch="UniformToFill" Margin="10,-15,0,0"  />
 

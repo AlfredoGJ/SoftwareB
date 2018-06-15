@@ -24,39 +24,41 @@ namespace League_planner
             {
                 if (gol.id == 0)
                 {
-                    command.CommandText = "INSERT INTO goles(clave_jugador, clave_partido, favor_o_contra) VALUES( @clave_jugador, @clave_partido, @favor_o_contra);";
+                    command.CommandText = "INSERT INTO goles(clave_jugador, clave_partido, favor_o_contra, clave_equipo) VALUES( @clave_jugador, @clave_partido, @favor_o_contra, @equipo);";
                     command.Parameters.AddWithValue("@clave_jugador",gol.clave_jugador);
                     command.Parameters.AddWithValue("@clave_partido", gol.clave_partido);
                     command.Parameters.AddWithValue("@favor_o_contra", gol.favor_o_contra);
+                    command.Parameters.AddWithValue("@equipo", gol.equipo);
                     command.ExecuteNonQuery();
                     gol.id = database.LastInsertRowId;
                 }
                 else
                 {
-                    command.CommandText = "UPDATE goles SET clave_jugador = @clave_jugador, clave_partido = @clave_partido, favor_o_contra = @favor_o_contra;";
+                    command.CommandText = "UPDATE goles SET clave_jugador = @clave_jugador, clave_partido = @clave_partido, favor_o_contra = @favor_o_contra, clave_equipo = @clave_equipo WHERE id= @id;";
                     command.Parameters.AddWithValue("@id", gol.id);
                     command.Parameters.AddWithValue("@clave_jugador", gol.clave_jugador);
                     command.Parameters.AddWithValue("@clave_partido", gol.clave_partido);
                     command.Parameters.AddWithValue("@favor_o_contra", gol.favor_o_contra);
+                    command.Parameters.AddWithValue("@clave_equipo", gol.equipo);
                     command.ExecuteNonQuery();
                 }
             }
         }
 
-        public List<Calendario> GetAll()
+        public List<Gol> GetAll()
         {
             DataTable table = new DataTable();
-            List<Calendario> eventos = new List<Calendario>();
-            string command = "SELECT * FROM calendarios";
+            List<Gol> goles = new List<Gol>();
+            string command = "SELECT * FROM goles";
             using (SQLiteDataAdapter adapter = new SQLiteDataAdapter(command, database))
             {
-                //adapter.Fill(table);
-                foreach(DataRow row in table.Rows)
+                adapter.Fill(table);
+                foreach (DataRow row in table.Rows)
                 {
-                    eventos.Add(new Calendario(row.Field<Int64>(0),row.Field<DateTime>(1),row.Field<string>(2), row.Field<string>(3)));
+                    goles.Add(new Gol(row.Field<Int64>(0), row.Field<int>(1), row.Field<int>(2), row.Field<int>(3), row.Field<int>(4)));
                 }
             }
-            return eventos;
+            return goles;
         }
 
         public void Delete(Gol g)

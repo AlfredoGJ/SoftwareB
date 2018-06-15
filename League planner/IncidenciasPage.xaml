@@ -45,7 +45,7 @@
 
 
             </StackPanel>
-            <Label x:Name="label1" Content="Elegir Evento" 
+            <Label x:Name="label1" Content="Elegir Partido" 
                    FontFamily="Arial" FontSize="20"
                    HorizontalAlignment="Left" Margin="182,135,0,0" VerticalAlignment="Top" Height="35" Width="137" RenderTransformOrigin="-0.456,0.4"/>
 
@@ -104,9 +104,9 @@
             <Button x:Name="button" 
                     FontFamily="Arial" FontSize="20"
                     Foreground="white"
-                    Click="button_Click_2"
+                    Click="Back"
                     Background="Blue" BorderBrush="White"
-                    Content="Agregar Incidencias" Margin="536,578,515,39"
+                    Content="Aceptar" Margin="536,578,515,39"
                      />
             <Label x:Name="label3_Copy1" Content="Tarjetas" 
                 FontFamily="Arial" FontSize="24"

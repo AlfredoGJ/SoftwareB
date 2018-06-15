@@ -1,0 +1,17 @@
+LICENCIA DEL SOFTWARE LEAGUE PLANNER
+AVISO IMPORTANTE
+La presente licencia de uso del sotware "League Planner" es un acuerdo que rigue el uso del
+software.
+El hecho de instalar el sotware, implica que uste acepta las condiciones
+de esta licencia. Si no acepta estas condiciones, no
+instale el software.
+
+CONSIDERACIONES
+* No puede comercializar el software por cuenta propia.
+* Su uso se autiliza mediante licencia.
+
+EXTENCIÓN DE GARANTÏA 
+* No existe garantía alguna
+* No existe responsabilidad alguna sobre daños  y perjuicios.
+
+Para un cualquier información consulte el manual de instalación.

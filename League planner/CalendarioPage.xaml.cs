@@ -102,6 +102,7 @@ namespace League_planner
                             calendario.fecha = fechaPartido;
                             App.CalendarioController.Save(calendario);
                             MessageBox.Show("Evento creado correctamente");
+                            Window.GetWindow(this).Content = previousPage;
 
 
                         }
@@ -110,7 +111,8 @@ namespace League_planner
                 }
                 catch(Exception exception)
                 {
-                    MessageBox.Show("Error C-05\nEl día no existe");
+
+                    MessageBox.Show("Error C-05\nEl día no existe"+exception.Message);
                 }
                
 

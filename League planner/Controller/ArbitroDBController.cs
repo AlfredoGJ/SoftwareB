@@ -8,6 +8,10 @@ using System.Data;
 
 namespace League_planner
 {
+
+    /// <summary>
+    /// Se encarga de hacer las transacciones de inserción, actualización, eliminación y lectura de la tabla arbitros, funciona como un puente entre el tipo de datos Arbitro de la aplicacion y la base de datos. 
+    /// </summary>
     public class ArbitroDBController
     {
         SQLiteConnection database1;

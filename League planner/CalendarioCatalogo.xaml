@@ -30,40 +30,54 @@
                 <Label FontSize="18"  HorizontalAlignment="Center">League Planner</Label>
             </StackPanel>
         </DockPanel>
-        <Grid Margin="0,0,0,10" Width="839">
-            <Label x:Name="dia" Content="Día" 
+
+        <StackPanel Orientation="Vertical">
+
+
+            <StackPanel Background="AliceBlue" Opacity=".7" Margin="0,20,0,0" Orientation="Horizontal"  Width="1240" Height="110"  >
+                <Image Width="446" Margin="-10,-10,20,0" Source="images/lp.png" Stretch="Uniform"/>
+                <DockPanel LastChildFill="False" Width="100"/>
+                <Label FontSize="60" HorizontalAlignment="Center" Margin="10,0,0,0" Content="Eventos" Width="463"/>
+            </StackPanel>
+
+            <Grid Margin="0" Width="939" Height="548">
+                <Label x:Name="dia" Content="Día" 
                    FontFamily="Arial" FontSize="20"
-                   HorizontalAlignment="Left" Margin="91,102,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="local" Content="Local" 
+                   HorizontalAlignment="Left" Margin="91,34,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="local" Content="Local" 
                 FontFamily="Arial" FontSize="20"
-                HorizontalAlignment="Left" Margin="240,102,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="visitante" Content="Visitante" 
+                HorizontalAlignment="Left" Margin="240,34,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="visitante" Content="Visitante" 
                 FontFamily="Arial" FontSize="20"
-                HorizontalAlignment="Left" Margin="458,102,0,0" VerticalAlignment="Top"/>
-            <Button x:Name="button" 
+                HorizontalAlignment="Left" Margin="458,34,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="button" 
                     Click="button_Click_2"
-                    Content="Agregar Evento" HorizontalAlignment="Left" Margin="688,102,0,0" VerticalAlignment="Top" Width="109" Height="46"/>
+                    Content="Agregar Partido" HorizontalAlignment="Left" Margin="688,34,0,0" VerticalAlignment="Top" Width="109" Height="46"/>
 
-            <ListView x:Name="listaEventos" Height="464" VerticalAlignment="Top" Margin="38,168,231,0" SelectionChanged="listaEventos_SelectionChanged">
-                <ListView.ItemTemplate >
-                    <DataTemplate >
-                        <StackPanel Orientation="Horizontal"  >
-                            <TextBlock Text="{Binding fecha}" FontSize="20" FontFamily="Arial" Foreground="Green"/>
-                            <TextBlock Text="      " FontSize="20" FontFamily="Arial"/>
-                            
-                            <TextBlock Text="{Binding local}" FontSize="20" FontFamily="Arial"/>
-                            <TextBlock Text="       vs.        " FontSize="20" FontFamily="Arial" Foreground="Blue"/>
-                            <TextBlock Text="{Binding visitante}" FontSize="20" FontFamily="Arial"/>
-                        </StackPanel>
+                <ListView x:Name="listaEventos" Height="361" VerticalAlignment="Top" Margin="38,100,231,0" SelectionChanged="listaEventos_SelectionChanged">
+                    <ListView.ItemTemplate >
+                        <DataTemplate >
+                            <StackPanel Orientation="Horizontal"  >
+                                <TextBlock Text="{Binding fecha}" FontSize="20" FontFamily="Arial" Foreground="Green"/>
+                                <TextBlock Text="      " FontSize="20" FontFamily="Arial"/>
 
-                    </DataTemplate>
-                </ListView.ItemTemplate>
+                                <TextBlock Text="{Binding local}" FontSize="20" FontFamily="Arial"/>
+                                <TextBlock Text="       vs.        " FontSize="20" FontFamily="Arial" Foreground="Blue"/>
+                                <TextBlock Text="{Binding visitante}" FontSize="20" FontFamily="Arial"/>
+                            </StackPanel>
 
-
-            </ListView>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
 
 
-        </Grid>
+                </ListView>
+
+
+            </Grid>
+
+        </StackPanel>
+
+
 
 
 
